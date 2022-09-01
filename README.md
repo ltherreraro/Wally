@@ -35,6 +35,17 @@ A continuacion se muestra un diagrama general
 
 ![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/State_Machine_Diagram_Example__Auction.svg)
 
+Finalmente los datasheet de los modulos a usar
+- [ESP32]([https://pages.github.com/](https://github.com/ltherreraro/Wally/blob/main/Datasheet/esp32-sl_specification.pdf))
+- [ESP32CAM]([https://pages.github.com/](https://github.com/ltherreraro/Wally/blob/main/Datasheet/ESP32-CAM%20Product%20Specification.pdf))
+- [Nodemcu]([https://pages.github.com/](https://www.make-it.ca/nodemcu-details-specifications/))
+- [ESP8266]([https://pages.github.com/](https://github.com/ltherreraro/Wally/blob/main/Datasheet/0a-esp8266ex_datasheet_en.pdf))
+- [Servo MG90]([https://pages.github.com/](https://github.com/ltherreraro/Wally/blob/main/Datasheet/MG90S_Tower-Pro%20(1).pdf))
+- [Servo SG90]([https://pages.github.com/](https://github.com/ltherreraro/Wally/blob/main/Datasheet/sg90_datasheet%20(1).pdf))
+- [Motor]([https://pages.github.com/](https://ferretronica.com/products/motorreductor-500-gr-cm-1000-rpm-6v?variant=12391693877341&currency=COP&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_campaign=gs-2021-10-19&utm_source=google&utm_medium=smart_campaign&gclid=Cj0KCQjwjbyYBhCdARIsAArC6LKaKwvKPRHye8ZWSAgEkHbSm4rjs0Gm-KYxnCncWKSN3TIoLXUkZbEaAqU5EALw_wcB))
+- [Ultrasonido]([https://pages.github.com/](https://github.com/ltherreraro/Wally/blob/main/Datasheet/HCSR04%20(1).pdf))
+- [Puente H]([https://pages.github.com/](https://github.com/ltherreraro/Wally/blob/main/Datasheet/datasheet-l9110%20(1).pdf))
+- [Regulador]([https://pages.github.com/](https://github.com/ltherreraro/Wally/blob/main/Datasheet/2001081204_Shikues-AMS1117-1-2_C475600.pdf))
 #### MEMORIA SD 
  Esta memoria se empleará para el almacenamiento de las imágenes tomadas por la cámara como informacion necesaria para conocer la posicion De los objetos, La comunicación de la micro SD esta basada en la interfaz de 8 pines(reloj, línea de comandos/ Master Out Slave In (MOSI), líneas 4xData / Master In Slave Out (MISO) y 3xPower). El protocolo SPI (Serial Peripheral Interface) es el protocolo de comunicación que admite la tarjeta para la inicialización. El funcionamiento del sistema se basa en 5 módulos: módulo de inicialización de tarjetas (CINM), módulo de lectura de tarjetas (CRM), módulo inactivo (IM),  módulo de escritura de tarjetas (CWM) y módulo de decisión (DM). Junto a los módulos hay una CU (unidad de control) que supervisar y controlar las actividades de cada módulo. Una microSD responde a una serie de comandos de 48 bits, para un almacenamiento dado de un solo bloque o multi-bloques, un solo bloque de almacenamiento posee un ancho de 512 bytes. 
 
