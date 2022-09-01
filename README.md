@@ -36,8 +36,8 @@ A continuacion se muestra un diagrama general
 ![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/State_Machine_Diagram_Example__Auction.svg)
 
 Finalmente los datasheet de los modulos a usar
-- [ESP32]([https://pages.github.com/](https://github.com/ltherreraro/Wally/blob/main/Datasheet/esp32-sl_specification.pdf))
-- [ESP32CAM]([https://pages.github.com/](https://github.com/ltherreraro/Wally/blob/main/Datasheet/ESP32-CAM%20Product%20Specification.pdf))
+- [ESP32](https://github.com/ltherreraro/Wally/blob/main/Datasheet/esp32-sl_specification.pdf)
+- [ESP32CAM](https://github.com/ltherreraro/Wally/blob/main/Datasheet/ESP32-CAM%20Product%20Specification.pdf)
 - [Nodemcu]([https://pages.github.com/](https://www.make-it.ca/nodemcu-details-specifications/))
 - [ESP8266]([https://pages.github.com/](https://github.com/ltherreraro/Wally/blob/main/Datasheet/0a-esp8266ex_datasheet_en.pdf))
 - [Servo MG90]([https://pages.github.com/](https://github.com/ltherreraro/Wally/blob/main/Datasheet/MG90S_Tower-Pro%20(1).pdf))
