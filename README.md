@@ -7,7 +7,7 @@ Durante la primera iteración, estamos trabajando para que Wally pueda recorrer 
 Recepción y transmisión de imágenes, streaming video, detección de imágenes vía imagen y sensor ultrasonido, capacidad de navegación, recolección del objeto, conectividad inalámbrica (Wi-Fi, Bluetooth).
 ###REQUERIMENTOS NO FUNCIONALES
 Estabilidad, fiabilidad, precisión el el reconocimiento y recolección de objeto, facilidad de uso.
-### MEMORIA SD
+** MEMORIA SD**
  Esta memoria se empleará para el almacenamiento de las imágenes tomadas por la cámara como informacion necesaria para conocer la posicion De los objetos, La comunicación de la micro SD esta basada en la interfaz de 8 pines(reloj, línea de comandos/ Master Out Slave In (MOSI), líneas 4xData / Master In Slave Out (MISO) y 3xPower). El protocolo SPI (Serial Peripheral Interface) es el protocolo de comunicación que admite la tarjeta para la inicialización. El funcionamiento del sistema se basa en 5 módulos: módulo de inicialización de tarjetas (CINM), módulo de lectura de tarjetas (CRM), módulo inactivo (IM),  módulo de escritura de tarjetas (CWM) y módulo de decisión (DM). Junto a los módulos hay una CU (unidad de control) que supervisar y controlar las actividades de cada módulo. Una microSD responde a una serie de comandos de 48 bits, para un almacenamiento dado de un solo bloque o multi-bloques, un solo bloque de almacenamiento posee un ancho de 512 bytes. 
 
 _CAJA (IN/OUT) Driver micro SD_
