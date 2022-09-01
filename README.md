@@ -21,6 +21,7 @@ El módulo ESP32-CAM  sera el modulo principal tiene algunas características t�
 - Tamaño de arreglo UXGA de 1622×1200 px
 - Formato de salida YUV422, YUV420, RGB565, RGB555 y compresión de datos de 8-bit.
 - Puede transferir imagen entre 15 y 60 FPS.
+
 Adicionalmente se usara un modulo secundario ESP8266 para el control de los motores y **modulo ultrasonido**, el sistema en general tiene diferentes modulos como:
 o Modulo de alimentacion: Consta de la bateria y el sistema de regulacion
 o Modulo de movimiento: Inicialmente se plantea que se requiere un puente H de dos canales y dos motores.
