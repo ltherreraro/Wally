@@ -23,13 +23,14 @@ El módulo ESP32-CAM  sera el modulo principal tiene algunas características t�
 - Puede transferir imagen entre 15 y 60 FPS.
 
 Adicionalmente se usara un modulo secundario ESP8266 para el control de los motores y **modulo ultrasonido**, el sistema en general tiene diferentes modulos como:
-o Modulo de alimentacion: Consta de la bateria y el sistema de regulacion
-o Modulo de movimiento: Inicialmente se plantea que se requiere un puente H de dos canales y dos motores.
-o Modulo de movimiento detecion: Consta de un servomotor de 360 grados para rotar la camara 360
-o Modulo de movimiento recolección: Inicialmente se plantea como dos servomotores
-o Modulo de deteccion: Consta de una camara para reconocer basura y ultrasonido para detectar obstaculos tambien la cercania de los objetos
-o Modulo de Indicadores y botones: Consta de leds para notificar al usuario conexion con el servidor, encendido, falla y botones de encendido tambien de reset.
-o Modulo SD: Que se encargara de guardar las imagenes para ser enviadas en caso de perdida de conexion.
+* Modulo de alimentacion: Consta de la bateria y el sistema de regulacion
+* Modulo de movimiento: Inicialmente se plantea que se requiere un puente H de dos canales y dos motores.
+* Modulo de movimiento detecion: Consta de un servomotor de 360 grados para rotar la camara 360
+* Modulo de movimiento recolección: Inicialmente se plantea como dos servomotores
+* Modulo de deteccion: Consta de una camara para reconocer basura y ultrasonido para detectar obstaculos tambien la cercania de los objetos
+* Modulo de Indicadores y botones: Consta de leds para notificar al usuario conexion con el servidor, encendido, falla y botones de encendido tambien de reset.
+ Modulo SD: Que se encargara de guardar las imagenes para ser enviadas en caso de perdida de conexion.
+
 A continuacion se muestra un diagrama general
 
 ![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/State_Machine_Diagram_Example__Auction.svg)
