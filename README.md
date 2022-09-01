@@ -1,5 +1,5 @@
 # Wally
-##Recolector de basura espacios cerrados usando esp32
+## Recolector de basura espacios cerrados usando esp32
 Es un dispositivo robótico con capacidad de navegación por  espacios abiertos y cerrados, reconocimiento y transmisión de imagen y video, con la finalidad de ver e identificar objetos del entorno y disponer de ellos (levantarlos, recogerlos y llevarlos a un sitio específico).  Inicialmente pensado para labores de aseo, puede ser fácilmente utilizado en otros entornos que por sus condiciones  representen un riesgo para la vida humana y animal (recintos con riesgos biológicos, edificios al borde del colapso, entre otros), que se puede validar a traves de una aplicacion
 ### ALCANCE
 Durante la primera iteración, estamos trabajando para que Wally pueda recorrer un espacio cerrado relativamente pequeño (por ejemplo, un salón) evitando obstaculos y la identificación de objetos a través de la cámara de manera limitada.
