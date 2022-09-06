@@ -45,7 +45,9 @@ Adicionalmente se usara un modulo secundario ESP8266 para el control de los moto
 
 A continuacion se muestra un diagrama general
 
-![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/State_Machine_Diagram_Example__Auction.svg)
+![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/diag1.PNG))
+
+![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/diag2.PNG))
 
 Finalmente los datasheet de los modulos a usar
 - [ESP32](https://github.com/ltherreraro/Wally/blob/main/Datasheet/esp32-sl_specification.pdf)
