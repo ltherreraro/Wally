@@ -7,6 +7,18 @@ Durante la primera iteración, estamos trabajando para que Wally pueda recorrer 
 Recepción y transmisión de imágenes, streaming video, detección de imágenes vía imagen y sensor ultrasonido, capacidad de navegación, recolección del objeto, conectividad inalámbrica (Wi-Fi, Bluetooth).
 ###REQUERIMENTOS NO FUNCIONALES
 Estabilidad, fiabilidad, precisión el el reconocimiento y recolección de objeto, facilidad de uso.
+### 
+| Equipo | Corriente | Voltaje  |
+| ------------- | ------------- |------------  |
+| ESP32CAM | 500mA  |  3.3V -5V |
+| NODEMCU  | 300mA  |  3,3V - 5V |
+| SERVOR  | 400mA  |   5V |
+| MOTOR  | 400mA  | 6v-9v |
+| ULTRASONIO  | 15mA  |  5V  |
+| L9110(PUENTE H)  | 0.5mA  | 2.5V-12V |
+| MORSUN  | 800mA  |4.5v-36v  |
+
+MORSUN: Salida 2000mA a 5V o 3,3V
 ### DIAGRAMA CAJA NEGRA
 El módulo ESP32-CAM  sera el modulo principal tiene algunas características técnicas como son:
 
