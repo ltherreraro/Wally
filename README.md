@@ -8,12 +8,12 @@ Recepción y transmisión de imágenes, streaming video, detección de imágenes
 ###REQUERIMENTOS NO FUNCIONALES
 Estabilidad, fiabilidad, precisión el el reconocimiento y recolección de objeto, facilidad de uso.
 ### 
-| Equipo | Corriente | Voltaje  |
+| Equipo | Corriente (in)| Voltaje (in)  |
 | ------------- | ------------- |------------  |
 | ESP32CAM | 500mA  |  3.3V -5V |
 | NODEMCU  | 300mA  |  3,3V - 5V |
 | SERVOR  | 400mA  |   5V |
-| MOTOR  | 400mA  | 6v-9v |
+| MOTOR  | 400mA  | 6V-9V |
 | ULTRASONIO  | 15mA  |  5V  |
 | L9110(PUENTE H)  | 0.5mA  | 2.5V-12V |
 | MORSUN  | 800mA  |4.5v-36v  |
