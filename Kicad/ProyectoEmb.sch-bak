@@ -1,0 +1,228 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2250 3150 500  1100
+U 63290786
+F0 "Power" 50
+F1 "Power.sch" 50
+F2 "+5V" O R 2750 3300 50 
+F3 "+3V3" O R 2750 3450 50 
+F4 "GND" O R 2750 3600 50 
+F5 "Rx" O R 2750 3750 50 
+F6 "Tx" O R 2750 3900 50 
+F7 "VBAT" O R 2750 4050 50 
+$EndSheet
+$Sheet
+S 4400 2550 1200 2250
+U 632B3D91
+F0 "ESP32_Wroom-32" 50
+F1 "ESP32_Wroom-32.sch" 50
+F2 "U_RX" I R 5600 4400 50 
+F3 "U_TX" I R 5600 4550 50 
+$EndSheet
+Text HLabel 4400 2650 2    50   Input ~ 0
+3V3
+Text HLabel 5600 2900 0    50   Input ~ 0
+en_A
+Text HLabel 5600 3050 0    50   Input ~ 0
+EN_B
+Text HLabel 5600 3200 0    50   Input ~ 0
+A1
+Text HLabel 5600 3350 0    50   Input ~ 0
+A2
+Text HLabel 5600 3500 0    50   Input ~ 0
+B1
+Text HLabel 5600 3650 0    50   Input ~ 0
+B2
+Text HLabel 5600 3800 0    50   Input ~ 0
+CAM_RX
+Text HLabel 4400 2900 2    50   Input ~ 0
+GND
+$Sheet
+S 7350 1600 1150 1550
+U 632C934A
+F0 "L278HN" 50
+F1 "L278HN.sch" 50
+F2 "+5V" I L 7350 1700 50 
+F3 "IN1" I L 7350 1850 50 
+F4 "V_m" I L 7350 3050 50 
+$EndSheet
+$Sheet
+S 7500 4500 950  950 
+U 632CC2E4
+F0 "ESP32_CAM_MOD." 50
+F1 "ESP32_CAM_MOD.sch" 50
+$EndSheet
+Text HLabel 7350 1850 2    50   Input ~ 0
+IN1
+Text HLabel 7350 2000 2    50   Input ~ 0
+IN2
+Text HLabel 7350 2150 2    50   Input ~ 0
+ENA
+Text HLabel 7350 2550 2    50   Input ~ 0
+IN4
+Text HLabel 7350 2700 2    50   Input ~ 0
+ENB
+Text HLabel 7350 2900 2    50   Input ~ 0
+GND
+Text HLabel 8500 1950 0    50   Input ~ 0
+OUT1
+Text HLabel 8500 2150 0    50   Input ~ 0
+OUT2
+Text HLabel 8500 2400 0    50   Input ~ 0
+OUT3
+Text HLabel 8500 2600 0    50   Input ~ 0
+OUT4
+Text HLabel 7500 4600 2    50   Input ~ 0
++5V
+Text HLabel 7500 4800 2    50   Input ~ 0
+GND
+Text HLabel 7500 5000 2    50   Input ~ 0
+CAM_TX
+Text HLabel 7500 5200 2    50   Input ~ 0
+CAM_RX
+Text HLabel 7500 5400 2    50   Input ~ 0
+SRV
+Text HLabel 5600 3950 0    50   Input ~ 0
+CAM_TX
+Text HLabel 5600 4100 0    50   Input ~ 0
+SDA
+Text HLabel 5600 4250 0    50   Input ~ 0
+SCL
+Wire Bus Line
+	7350 1700 6200 1700
+Wire Bus Line
+	3300 1700 3300 3300
+Wire Bus Line
+	3300 3300 2750 3300
+Wire Bus Line
+	2750 3450 3800 3450
+Wire Bus Line
+	3800 3450 3800 2650
+Wire Bus Line
+	3800 2650 4400 2650
+Wire Bus Line
+	7500 4800 6550 4800
+Wire Bus Line
+	6350 4800 6350 5500
+Wire Bus Line
+	6350 5500 4200 5500
+Wire Bus Line
+	3300 5500 3300 3600
+Wire Bus Line
+	3300 3600 2750 3600
+Wire Bus Line
+	4400 2900 4200 2900
+Wire Bus Line
+	4200 2900 4200 5500
+Connection ~ 4200 5500
+Wire Bus Line
+	4200 5500 3300 5500
+Wire Bus Line
+	7350 2900 6550 2900
+Wire Bus Line
+	6550 2900 6550 4800
+Connection ~ 6550 4800
+Wire Bus Line
+	6550 4800 6350 4800
+Wire Bus Line
+	7500 4600 6200 4600
+Wire Bus Line
+	6200 4600 6200 1700
+Connection ~ 6200 1700
+Wire Bus Line
+	6200 1700 3300 1700
+Wire Bus Line
+	5600 2900 6000 2900
+Wire Bus Line
+	6000 2900 6000 2150
+Wire Bus Line
+	6000 2150 7350 2150
+Wire Bus Line
+	5600 3050 6300 3050
+Wire Bus Line
+	6300 3050 6300 2700
+Wire Bus Line
+	6300 2700 7350 2700
+Wire Bus Line
+	5600 3200 5700 3200
+Wire Bus Line
+	5700 3200 5700 1850
+Wire Bus Line
+	5700 1850 7350 1850
+Wire Bus Line
+	5600 3350 5800 3350
+Wire Bus Line
+	5800 3350 5800 2000
+Wire Bus Line
+	5800 2000 7350 2000
+Wire Bus Line
+	5600 3500 6400 3500
+Wire Bus Line
+	6400 3500 6400 2400
+Wire Bus Line
+	6400 2400 7350 2400
+Wire Bus Line
+	5600 3650 6750 3650
+Wire Bus Line
+	6750 3650 6750 2550
+Wire Bus Line
+	6750 2550 7350 2550
+Text HLabel 7350 2400 2    50   Input ~ 0
+IN3
+Wire Bus Line
+	5600 3800 7250 3800
+Wire Bus Line
+	7250 3800 7250 5000
+Wire Bus Line
+	7250 5000 7500 5000
+Wire Bus Line
+	5600 4000 6950 4000
+Wire Bus Line
+	6950 4000 6950 5200
+Wire Bus Line
+	6950 5200 7500 5200
+Wire Bus Line
+	2750 3750 3800 3750
+Wire Bus Line
+	3800 3750 3800 5200
+Wire Bus Line
+	3800 5200 5700 5200
+Wire Bus Line
+	5700 5200 5700 4550
+Wire Bus Line
+	5700 4550 5600 4550
+Wire Bus Line
+	2750 3900 3150 3900
+Wire Bus Line
+	3150 3900 3150 5350
+Wire Bus Line
+	3150 5350 5850 5350
+Wire Bus Line
+	5850 5350 5850 4400
+Wire Bus Line
+	5850 4400 5600 4400
+Wire Bus Line
+	2750 4050 3100 4050
+Wire Bus Line
+	3100 4050 3100 1500
+Wire Bus Line
+	3100 1500 7100 1500
+Wire Bus Line
+	7100 1500 7100 3050
+Wire Bus Line
+	7100 3050 7350 3050
+$EndSCHEMATC

@@ -1,0 +1,115 @@
+Info: Procesando el símbolo 'C10:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'H4:MountingHole:MountingHole_2.7mm_M2.5'.
+Info: Procesando el símbolo 'J2:'.
+Info: Procesando el símbolo 'J1:RP2040_minimal:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal_modified'.
+Info: Procesando el símbolo 'R8:'.
+Info: Procesando el símbolo 'C5:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'U4:Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical'.
+Info: Procesando el símbolo 'C6:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'U3:Package_TO_SOT_SMD:SOT-223-3_TabPin2'.
+Info: Procesando el símbolo 'C7:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'C4:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'C8:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'U2:RP2040_minimal:RP2040-QFN-56'.
+Info: Procesando el símbolo 'C9:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'R5:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'C17:Capacitor_SMD:C_0805_2012Metric'.
+Info: Procesando el símbolo 'U1:Package_SO:SOIC-8_5.23x5.23mm_P1.27mm'.
+Info: Procesando el símbolo 'C11:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'C12:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'R7:'.
+Info: Procesando el símbolo 'C13:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'C3:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'C14:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'R6:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'Y1:RP2040_minimal:Crystal_SMD_HC49-US'.
+Info: Procesando el símbolo 'C15:Capacitor_SMD:C_0805_2012Metric'.
+Info: Procesando el símbolo 'C2:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'C16:Capacitor_SMD:C_0805_2012Metric'.
+Info: Procesando el símbolo 'D7:'.
+Info: Procesando el símbolo 'H3:MountingHole:MountingHole_2.7mm_M2.5'.
+Info: Procesando el símbolo 'C18:'.
+Info: Procesando el símbolo 'R4:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'C19:'.
+Info: Procesando el símbolo 'D1:'.
+Info: Procesando el símbolo 'R3:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'D2:'.
+Info: Procesando el símbolo 'D3:'.
+Info: Procesando el símbolo 'R2:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'D4:'.
+Info: Procesando el símbolo 'R1:'.
+Info: Procesando el símbolo 'D5:'.
+Info: Procesando el símbolo 'J10:'.
+Info: Procesando el símbolo 'D6:'.
+Info: Procesando el símbolo 'C1:Capacitor_SMD:C_0402_1005Metric'.
+Info: Procesando el símbolo 'J9:'.
+Info: Procesando el símbolo 'J3:'.
+Info: Procesando el símbolo 'J4:Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical'.
+Info: Procesando el símbolo 'H2:MountingHole:MountingHole_2.7mm_M2.5'.
+Info: Procesando el símbolo 'H1:MountingHole:MountingHole_2.7mm_M2.5'.
+Info: Procesando el símbolo 'J5:'.
+Info: Procesando el símbolo 'D10:'.
+Info: Procesando el símbolo 'J6:'.
+Info: Procesando el símbolo 'D9:'.
+Info: Procesando el símbolo 'J7:'.
+Info: Procesando el símbolo 'D8:'.
+Info: Procesando el símbolo 'J8:'.
+Añadir C12 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir C11 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir C10 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir H4 (huella 'MountingHole:MountingHole_2.7mm_M2.5').
+Añadir C8 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir C7 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir C6 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir C5 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir C4 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir C3 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir C2 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir C1 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir J1 (huella 'RP2040_minimal:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal_modified').
+Añadir H3 (huella 'MountingHole:MountingHole_2.7mm_M2.5').
+Añadir H2 (huella 'MountingHole:MountingHole_2.7mm_M2.5').
+Añadir H1 (huella 'MountingHole:MountingHole_2.7mm_M2.5').
+Añadir U1 (huella 'Package_SO:SOIC-8_5.23x5.23mm_P1.27mm').
+Añadir C14 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir C13 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir U4 (huella 'Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical').
+Añadir Y1 (huella 'RP2040_minimal:Crystal_SMD_HC49-US').
+Añadir J4 (huella 'Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical').
+Añadir U3 (huella 'Package_TO_SOT_SMD:SOT-223-3_TabPin2').
+Añadir U2 (huella 'RP2040_minimal:RP2040-QFN-56').
+Añadir R2 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir R6 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir R5 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir R4 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir C9 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Añadir C17 (huella 'Capacitor_SMD:C_0805_2012Metric').
+Añadir C16 (huella 'Capacitor_SMD:C_0805_2012Metric').
+Añadir C15 (huella 'Capacitor_SMD:C_0805_2012Metric').
+Añadir R3 (huella 'Capacitor_SMD:C_0402_1005Metric').
+Error: No puede añadirse J8 (no se ha asignado huella).
+Error: No puede añadirse D6 (no se ha asignado huella).
+Error: No puede añadirse J9 (no se ha asignado huella).
+Error: No puede añadirse D5 (no se ha asignado huella).
+Error: No puede añadirse C18 (no se ha asignado huella).
+Error: No puede añadirse C19 (no se ha asignado huella).
+Error: No puede añadirse D1 (no se ha asignado huella).
+Error: No puede añadirse D2 (no se ha asignado huella).
+Error: No puede añadirse D3 (no se ha asignado huella).
+Error: No puede añadirse R1 (no se ha asignado huella).
+Error: No puede añadirse D4 (no se ha asignado huella).
+Error: No puede añadirse D7 (no se ha asignado huella).
+Error: No puede añadirse J10 (no se ha asignado huella).
+Error: No puede añadirse R7 (no se ha asignado huella).
+Error: No puede añadirse D8 (no se ha asignado huella).
+Error: No puede añadirse R8 (no se ha asignado huella).
+Error: No puede añadirse J6 (no se ha asignado huella).
+Error: No puede añadirse D9 (no se ha asignado huella).
+Error: No puede añadirse J5 (no se ha asignado huella).
+Error: No puede añadirse D10 (no se ha asignado huella).
+Error: No puede añadirse J3 (no se ha asignado huella).
+Error: No puede añadirse J2 (no se ha asignado huella).
+Error: No puede añadirse J7 (no se ha asignado huella).
+
+
+Info: Número de avisos: 0, errores: 23.
