@@ -62,7 +62,8 @@ En el archivo configPin.txt esta como llamar los diferentes pines segun su propo
 
 ### PWM
 
-`#include </home/tatiana/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
+```
+#include </home/tatiana/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
 
 {
 	pwm_leds1 {
@@ -94,7 +95,8 @@ En el archivo configPin.txt esta como llamar los diferentes pines segun su propo
 		};
 	};
 };
-`.
+``` 
+
 #### Notas PWM 
 
 ##### viene de zepthyrproject/zephyr
