@@ -12,7 +12,9 @@ Pasos son para crear apps zephyros:
 1. Crear pp
 2. compilar
 3. flash
+
 ### Pasos crear app
+
 Los archivos base que se pueden copiar de los ejemplos son:
 1. Carpeta src
 2. CMakeLists.txt	->usualmente no se debe cambiar y aqui va projecto, paquete zephyr , etc
@@ -32,24 +34,32 @@ Finalmente se debe crear:
 rpi_pico.overlay	-> aqui se debe poner todo lo concerniente para enlazar los pines fisico de la tarjeta con las 
 			definiciones concernientes de la tarjeta
 
+
 ### Pasos para compilar
+
 para genera el .uf2
 1. bash environment.bash ejecutar 1 vez en la carpeta de la app que previamente copiamos
 2. make b
+
 ### Pasos para flashear
+
 1. Con la tarjeta desconectada presionar el boton fisico de la rpi_pico (bootset) tenerlo presioado
 y conectar con el boton presionado la tarjeta al pc esperar 1 seg y soltar el boton
 2. esperar hasta que salga la carpeta /media/RPI-RP2
 3. Ejecutar el comando make f
 
 ## Extras
+
 ### West compilacion
+
 comando que se ejecuta en make b donde $(BOARD) es rpi_pico y $(DTS_OVERLAY) es donde esta el archivo overlay donde se modificaron o se hizo superposicion de la definicion de los dispositivos
 
 west build -p auto -b $(BOARD) -- -DDTC_OVERLAY_FILE=$(DTS_OVERLAY)
 
 ### Configuracion de pines
+
 En el archivo configPin.txt esta como llamar los diferentes pines segun su proposito		
+
 ### PWM
 
 #include </home/tatiana/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
@@ -85,8 +95,11 @@ En el archivo configPin.txt esta como llamar los diferentes pines segun su propo
 		};
 	};
 };
+
 #### Notas PWM 
+
 ##### viene de zepthyrproject/zephyr
+
 /boards/arm/rpi_pico/rpi_pico.dts y de /dts/binding/gpio_pwm.yaml para saber numero de pwm
 pwm_leds {
 		compatible = "pwm-leds";
