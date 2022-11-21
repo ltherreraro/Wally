@@ -73,7 +73,6 @@ En el archivo configPin.txt esta como llamar los diferentes pines segun su propo
 			label = "PWM_LED1";
 		};
 	};
-
 	aliases {
 		pwm-led1 = &pwm_led1;
 	};
