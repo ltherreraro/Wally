@@ -1,6 +1,9 @@
-# zephyrOS rp2040 blink example
+# zephyrOS rp2040 servo example
 
-Se hizo la programacion basica es decir hacer parpadear un led
+Se programo un pwm que variara entre 0 grados y 180 de pasos pequeños en un ciclo
 
 ## Deficiones de pines
-En el archivo boards/rpi-pico.overlay se encuentra configurado en pin3 es decir el gpio 3 y se le puso un alias que es led1 que sera el que se llame en el archivo /src/main.c 
+En el archivo boards/rpi-pico.overlay se encuentra configurado en pwm 0 pero asociado a un serco que corresponde a el gpio 1 y se le puso un alias que es servo que sera el que se llame en el archivo /src/main.c 
+
+## Conexiones
+
