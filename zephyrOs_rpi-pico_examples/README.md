@@ -142,4 +142,5 @@ Finalmente en  include/zephyr/dt-bings/pinctrl/rpi-pico-rp2040-pinctrl.h se encu
 ```
 	#define PWM_4B_P25 RP2040_PINMUX(25, RP2_PINCTRL_GPIO_FUNC_PWM) 
 ```
-
+## Pines Rpi-pico
+![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/raspberryPipico.PNG))
