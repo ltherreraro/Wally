@@ -63,7 +63,7 @@ west build -p auto -b $(BOARD) -- -DDTC_OVERLAY_FILE=$(DTS_OVERLAY)
 En el archivo configPin.txt esta como llamar los diferentes pines segun su proposito		
 
 ### PWM
-
+Se debe copiar lo mostrado a continuacion y modificar segun corresponda en el include es donde esta la configuracion de los pines de la rpi-pico.
 ```
 #include </home/tatiana/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
 
@@ -101,9 +101,11 @@ En el archivo configPin.txt esta como llamar los diferentes pines segun su propo
 
 #### Notas PWM 
 
-##### viene de zepthyrproject/zephyr
+##### viene de zephyrproject/zephyr
 
-/boards/arm/rpi_pico/rpi_pico.dts y de /dts/binding/gpio_pwm.yaml para saber numero de pwm
+Todo viene de git de zephyrproject como se debe crear una superposicion lo primero es ver de donde viene y como crearlo en la carpeta /boards/arm/rpi_pico/rpi_pico.dts esta la definicion que ya trae y de /dts/binding/gpio_pwm.yaml para saber numero de pwm donde dice pws=...
+
+```
 pwm_leds {
 		compatible = "pwm-leds";
 		pwm_led0: pwm_led_0 {
@@ -124,14 +126,19 @@ pwm_leds {
 	pinctrl-0 = <&pwm_ch4b_default>;
 	pinctrl-names = "default";
 	divider-int-0 = <255>;
+```
 
-/boards/arm/rpi_pico/
+En la carpeta /boards/arm/rpi_pico/rpi_pico.dtsi se encuentra la definicion de los pines de pwm que es pinmux = <PWM_4B_P25>; que corresponde a pwm4B en el pin 25
+
+```
 	pwm_ch4b_default: pwm_ch4b_default {
 		group1 {
 			pinmux = <PWM_4B_P25>;
 		};
 	};
-	
-	#define PWM_4B_P25 RP2040_PINMUX(25, RP2_PINCTRL_GPIO_FUNC_PWM) en include/zephyr/dt-bings/pinctrl
-
+```
+Finalmente en  include/zephyr/dt-bings/pinctrl/printctrl-rpi-pico.h se encuentran toda la configuraciones de los pines segun su proposito
+```
+	#define PWM_4B_P25 RP2040_PINMUX(25, RP2_PINCTRL_GPIO_FUNC_PWM) 
+```
 
