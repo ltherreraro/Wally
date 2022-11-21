@@ -6,7 +6,7 @@ https://docs.zephyrproject.org/latest/boards/arm/rpi_pico/doc/index.html
 
 https://docs.zephyrproject.org/3.0.0/reference/kconfig/CONFIG_BUILD_OUTPUT_UF2.html
 
-##Pasos proyectos
+## Pasos proyectos
 
 pasos son para crear apps zephyros:
 1. Crear pp
