@@ -61,7 +61,7 @@ west build -p auto -b $(BOARD) -- -DDTC_OVERLAY_FILE=$(DTS_OVERLAY)
 En el archivo configPin.txt esta como llamar los diferentes pines segun su proposito		
 
 ### PWM
-
+`código`.
 #include </home/tatiana/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
 
 {
