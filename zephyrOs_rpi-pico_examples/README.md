@@ -15,7 +15,7 @@ Pasos son para crear apps zephyros:
 
 ### Pasos crear app
 
-Los archivos base que se pueden copiar de los ejemplos de zephyr oficial son:
+Los archivos base que se pueden copiar de los ejemplos mostrados aqui son:
 1. Carpeta src
 2. CMakeLists.txt	->usualmente no se debe cambiar y aqui va projecto, paquete zephyr , etc
 3. prj.conf 		-> si se copia de un ejemplo usualmente no se cambia y debe contener que tipo de configuracion tiene
