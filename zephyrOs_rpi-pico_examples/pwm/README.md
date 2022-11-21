@@ -1,6 +1,5 @@
-# zephyrOS rp2040 blink example
-
-Se hizo la programacion basica es decir hacer parpadear un led
+# zephyrOS rp2040 pwm
+Se programo un pwm que varia el ancho de pulso desde el minimo hasta llegar al maximo en el gpio 1
 
 ## Deficiones de pines
-En el archivo boards/rpi-pico.overlay se encuentra configurado en pin3 es decir el gpio 3 y se le puso un alias que es led1 que sera el que se llame en el archivo /src/main.c 
+En el archivo boards/rpi-pico.overlay se encuentra configurado el pwm 0 que corresponde al gpio 1 y se le puso un alias que es pwm_led1 que sera el que se llame en el archivo /src/main.c 
