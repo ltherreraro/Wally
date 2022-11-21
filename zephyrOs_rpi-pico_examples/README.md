@@ -37,16 +37,18 @@ rpi_pico.overlay	-> aqui se debe poner todo lo concerniente para enlazar los pin
 
 ### Pasos para compilar
 
-para genera el .uf2
+Para genera el .uf2
 1. bash environment.bash ejecutar 1 vez en la carpeta de la app que previamente copiamos
 2. make b
+Nota: en la carpeta donde se ejecuto make b se creo una carpeta llamada build adentro de esa carpeta /build/zephyr se creo el archivo rpi_pico.uf2
 
 ### Pasos para flashear
 
 1. Con la tarjeta desconectada presionar el boton fisico de la rpi_pico (bootset) tenerlo presioado
 y conectar con el boton presionado la tarjeta al pc esperar 1 seg y soltar el boton
-2. esperar hasta que salga la carpeta /media/RPI-RP2
-3. Ejecutar el comando make f
+2. Esperar hasta que salga la carpeta /media/RPI-RP2
+3. Ejecutar el comando make f (Esto lo que hace es copiar el archivo .ufe a la rpi-pico)
+Nota: Otra opcione es reptir el punto 1 y copiar el archivo .uf2 a /media/rpi-rp2
 
 ## Extras
 
