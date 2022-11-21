@@ -8,4 +8,6 @@ En el archivo boards/rpi-pico.overlay se encuentra configurado el pwm 0 que corr
 En la imagen se ve las conexiones para ver el funcionamiento del codigo
 ![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/conexion_pwm.png))
 
-
+## Pines pwm rpi-pico
+En la imagen se ven los pines que se pueden usar para pwm
+![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/raspberryPipicoPWM.PNG))
