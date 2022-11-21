@@ -54,7 +54,7 @@ Nota: Otra opcione es reptir el punto 1 y copiar el archivo .uf2 a /media/rpi-rp
 
 ### West compilacion
 
-comando que se ejecuta en make b donde $(BOARD) es rpi_pico y $(DTS_OVERLAY) es donde esta el archivo overlay donde se modificaron o se hizo superposicion de la definicion de los dispositivos
+comando que se ejecuta en make b donde ´´´$(BOARD)´´´ es rpi_pico y ´´´$(DTS_OVERLAY)´´´ es donde esta el archivo overlay donde se modificaron o se hizo superposicion de la definicion de los dispositivos
 
 west build -p auto -b $(BOARD) -- -DDTC_OVERLAY_FILE=$(DTS_OVERLAY)
 
