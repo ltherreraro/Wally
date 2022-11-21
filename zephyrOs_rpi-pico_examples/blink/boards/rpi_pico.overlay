@@ -1,0 +1,17 @@
+
+/ {
+  
+  aliases {
+    led1 = &led_blue_label;
+  };
+  /* Creando nodo para GPIO específico */
+  my_leds_node {
+    /* ~/zephyrproject/zephyr/dts/bindings/gpio/gpio-leds.yaml */
+    compatible = "gpio-leds";
+    led_blue_label: led_blue_node {
+      gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
+    };
+  };
+};
+	
+	
