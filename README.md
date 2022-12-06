@@ -75,7 +75,10 @@ _CAJA FUNCIONAL (IN/OUT) micro SD_
 #### Placa fabricada (Embebido)
 Para este proyecto se diseño una placa con las condiciones necesarias para soportar el proyecto requerido, tanto en las corrientes que se aplican como en los circuitor integrados, dando como resultado, despues de impresión y ensamble, la siguiente placa: 
 
-Fotos placa
+![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/PCB%20completa.PNG))
+![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Placa%20proyecto%20Embebidos.PNG))
+![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Placa%20proyecto%20Embebidos%202.PNG))
+
 
 #### Diseño modelo 3D 
 El diseño 3D del carro y sus partes se realizó tomando cada pieza del carro por aparte para menor compljidad,esto permitió un mejor diseño 3D el cual se muestra acontinuación:
