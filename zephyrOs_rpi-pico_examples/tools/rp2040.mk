@@ -8,4 +8,4 @@ environment:
 	/bin/bash $(PATH_TOOLS)/zephyr-env.sh default
 
 flash:
-	cp build/zephyr/zephyr.uf2 /media/`whoami`/RPI-RP2/
+	cp build/zephyr/zephyr.uf2 /media/maik/RPI-RP21/
