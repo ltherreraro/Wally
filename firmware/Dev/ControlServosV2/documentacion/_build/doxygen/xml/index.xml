@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="main_8c" kind="file"><name>main.c</name>
+    <member refid="main_8c_1aa1fc04bb4c614ea829be2eb2241f7306" kind="function"><name>demo_servos</name></member>
+    <member refid="main_8c_1a6288eba0f8e8ad3ab1544ad731eb7667" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="servo_8c" kind="file"><name>servo.c</name>
+    <member refid="servo_8c_1af6cffce1346f5ea0772e84f63a1c418d" kind="define"><name>objeto_servo</name></member>
+    <member refid="servo_8c_1a504a48856b2b1c8a48325df7088f49aa" kind="define"><name>MINPULSE</name></member>
+    <member refid="servo_8c_1a7302231f8485e64ea42e2e726075b6ee" kind="define"><name>MAXPULSE</name></member>
+    <member refid="servo_8c_1a0a6a6aa82dc3ec38066c14cd7241949e" kind="define"><name>FGRADOS</name></member>
+    <member refid="servo_8c_1a70be2dc5c8bdc85b027ea6118753cca1" kind="define"><name>STEP</name></member>
+    <member refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098" kind="enum"><name>direction</name></member>
+    <member refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098ac2cd8d8289760e9d504f8e44fdf48e95" kind="enumvalue"><name>RIGTH</name></member>
+    <member refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da" kind="enumvalue"><name>DOWN</name></member>
+    <member refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098adb45120aafd37a973140edee24708065" kind="enumvalue"><name>LEFT</name></member>
+    <member refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098aba595d8bca8bc5e67c37c0a9d89becfa" kind="enumvalue"><name>UP</name></member>
+    <member refid="servo_8c_1a6190848140e47640071699b31523e32e" kind="variable"><name>servo0</name></member>
+    <member refid="servo_8c_1a2febcf98052aa61b54400146eb4c8e51" kind="variable"><name>servo1</name></member>
+    <member refid="servo_8c_1a115c6b929ba1492d937c843cc943bbcc" kind="function"><name>calibracion</name></member>
+    <member refid="servo_8c_1a0c6fa123afe4328571576d130fced1ab" kind="function"><name>min_max_pulse</name></member>
+    <member refid="servo_8c_1afaca9148de068830224dd17615aa480b" kind="function"><name>servo_tapa</name></member>
+    <member refid="servo_8c_1ac0e394261f0cff4b4f2d2a7e7ca492b9" kind="function"><name>movimiento</name></member>
+    <member refid="servo_8c_1a8baf985d647d74b4572ffa17c6b27e38" kind="function"><name>prueba_fun_camara</name></member>
+    <member refid="servo_8c_1a0a8c3cbdccb1be8986515dc41392ba00" kind="function"><name>servo_camara</name></member>
+    <member refid="servo_8c_1a534ab8eaf386e1d4304791b3712edd00" kind="function"><name>init_servos</name></member>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/tatiana/projects/zephyros-rp2040-example3/ControlServos/src</name>
+  </compound>
+</doxygenindex>

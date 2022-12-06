@@ -1,0 +1,52 @@
+
+#include </home/tatiana/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
+
+
+/ {
+	servo1: servo1 {
+		compatible = "pwm-servo";
+		pwms = <&pwm 1 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
+		min-pulse = <PWM_USEC(700)>;
+		max-pulse = <PWM_USEC(2500)>;
+	};
+	servo0: servo0 {
+		compatible = "pwm-servo";
+		pwms = <&pwm 0 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
+		min-pulse = <PWM_USEC(700)>;
+		max-pulse = <PWM_USEC(2500)>;
+	};
+	
+	
+	
+};
+
+
+
+&pinctrl {
+	pwm_ch1b_default: pwm_ch1b_default {
+		group1 {
+			pinmux = 
+			<PWM_0B_P1>,
+			<PWM_0A_P0>;
+		};
+	};
+};
+
+&pwm {
+	status = "okay";
+	pinctrl-0 = <&pwm_ch1b_default>;
+	pinctrl-names = "default";
+	#address-cells = <1>;
+	#size-cells = <0>;
+	channel0@0 {
+		reg = <0x0>;
+		timer = <0>;
+	};
+	channel1@1 {
+		reg = <0x1>;
+		timer = <0>;
+	};
+};
+
+
+

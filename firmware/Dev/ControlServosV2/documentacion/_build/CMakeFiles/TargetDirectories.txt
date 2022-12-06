@@ -1,0 +1,11 @@
+/home/tatiana/projects/zephyros-rp2040-example3/ControlServos/documentacion/_build/CMakeFiles/doxygen.dir
+/home/tatiana/projects/zephyros-rp2040-example3/ControlServos/documentacion/_build/CMakeFiles/devicetree.dir
+/home/tatiana/projects/zephyros-rp2040-example3/ControlServos/documentacion/_build/CMakeFiles/html.dir
+/home/tatiana/projects/zephyros-rp2040-example3/ControlServos/documentacion/_build/CMakeFiles/html-nodeps.dir
+/home/tatiana/projects/zephyros-rp2040-example3/ControlServos/documentacion/_build/CMakeFiles/latex.dir
+/home/tatiana/projects/zephyros-rp2040-example3/ControlServos/documentacion/_build/CMakeFiles/latex-nodeps.dir
+/home/tatiana/projects/zephyros-rp2040-example3/ControlServos/documentacion/_build/CMakeFiles/linkcheck.dir
+/home/tatiana/projects/zephyros-rp2040-example3/ControlServos/documentacion/_build/CMakeFiles/linkcheck-nodeps.dir
+/home/tatiana/projects/zephyros-rp2040-example3/ControlServos/documentacion/_build/CMakeFiles/pristine.dir
+/home/tatiana/projects/zephyros-rp2040-example3/ControlServos/documentacion/_build/CMakeFiles/edit_cache.dir
+/home/tatiana/projects/zephyros-rp2040-example3/ControlServos/documentacion/_build/CMakeFiles/rebuild_cache.dir
