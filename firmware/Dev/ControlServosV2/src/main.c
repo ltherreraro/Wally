@@ -13,7 +13,7 @@
 #include <zephyr/device.h>
 #include <zephyr/drivers/pwm.h>
 #include "servo.c"
-#include "motores.c"
+
 /**
  * @brief 
  * 
