@@ -2,44 +2,16 @@
 / {
   
   aliases {
-    echo1 = &echo1;
-    trig1 = &trig1;
-    echo2 = &echo2;
-    trig2 = &trig2;
-    echo3 = &echo3;
-    trig3 = &trig3;
-    echo4 = &echo4;
-    trig4 = &trig4;
+    led1 = &led_blue_label;
   };
   /* Creando nodo para GPIO específico */
   my_leds_node {
+    /* ~/zephyrproject/zephyr/dts/bindings/gpio/gpio-leds.yaml */
     compatible = "gpio-leds";
-    echo1: echo1 {
-      gpios = <&gpio0 5 GPIO_ACTIVE_HIGH>;
-    };
-    trig1: trig1 {
-      gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
-    };
-    echo2: echo2 {
-      gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
-    };
-    trig2: trig2 {
-      gpios = <&gpio0 8 GPIO_ACTIVE_HIGH>;
-    };
-    echo3: echo3 {
-      gpios = <&gpio0 9 GPIO_ACTIVE_HIGH>;
-    };
-    trig3: trig3 {
-      gpios = <&gpio0 10 GPIO_ACTIVE_HIGH>;
-    };
-    echo4: echo4 {
-      gpios = <&gpio0 18 GPIO_ACTIVE_HIGH>;
-    };
-    trig4: trig4 {
-      gpios = <&gpio0 26 GPIO_ACTIVE_HIGH>;
+    led_blue_label: led_blue_node {
+      gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
     };
   };
 };
-
 	
 	

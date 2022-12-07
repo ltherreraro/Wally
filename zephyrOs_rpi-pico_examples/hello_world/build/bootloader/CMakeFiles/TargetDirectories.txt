@@ -1,0 +1,3 @@
+/home/tatiana/projects/zephyros-rp2040-example3/holamundo/build/bootloader/CMakeFiles/boot_stage2.dir
+/home/tatiana/projects/zephyros-rp2040-example3/holamundo/build/bootloader/CMakeFiles/edit_cache.dir
+/home/tatiana/projects/zephyros-rp2040-example3/holamundo/build/bootloader/CMakeFiles/rebuild_cache.dir

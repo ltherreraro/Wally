@@ -1,0 +1,22 @@
+#include </home/tatiana/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
+
+
+
+&uart0 {
+	current-speed = <115200>;
+	status = "okay";
+	pinctrl-0 = <&uart0_default>;
+	pinctrl-names = "default";
+};
+
+&pinctrl {
+	uart0_default: uart0_default {
+		group1 {
+			pinmux = <UART0_TX_P12>;
+		};
+		group2 {
+			pinmux = <UART0_RX_P13>;
+			input-enable;
+		};
+	};
+};

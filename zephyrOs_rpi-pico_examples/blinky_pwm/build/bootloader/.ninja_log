@@ -1,0 +1,12 @@
+# ninja log v5
+0	37	1670296993321529196	CMakeFiles/boot_stage2.dir/home/tatiana/zephyrproject/modules/hal/rpi_pico/src/rp2_common/boot_stage2/boot2_w25q080.S.obj	abb7ed14e88699e3
+37	90	1670296993373525247	boot_stage2	27070001aa76f1c0
+37	90	1670296993373525247	boot_stage2.bin	27070001aa76f1c0
+37	90	1670296993373525247	boot_stage2.S	27070001aa76f1c0
+21	72	1668994906301748450	/home/tatiana/projects/zephyros-rp2040-example3/blinky_pwm/build/bootloader/boot_stage2.bin	bdc478dac671c40
+21	72	1668994906301748450	/home/tatiana/projects/zephyros-rp2040-example3/blinky_pwm/build/bootloader/boot_stage2.S	bdc478dac671c40
+0	51	1670298758015254147	boot_stage2	bdc478dac671c40
+0	51	1670298758015254147	boot_stage2.bin	bdc478dac671c40
+0	51	1670298758015254147	boot_stage2.S	bdc478dac671c40
+0	51	1670298758015254147	/home/tatiana/projects/zephyros-rp2040-example3/blinky_pwm/build/bootloader/boot_stage2.bin	bdc478dac671c40
+0	51	1670298758015254147	/home/tatiana/projects/zephyros-rp2040-example3/blinky_pwm/build/bootloader/boot_stage2.S	bdc478dac671c40

@@ -8,4 +8,3 @@ En el archivo boards/rpi-pico.overlay se encuentra configurado en pin3 es decir 
 ## Conexiones
 En la imagen se ve las conexiones
 ![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/conexion_blink.png))
-
