@@ -2,7 +2,7 @@
 
 -Se busco **separar** el codigo que va en zephyr del mapa de simulación. De este modo solo se requiere exportar las funciones en C. 
 
--En lo único que interactua el mapa y el codigo del robot es en la medición del ultrasonido, de este modo se logra un entorno de pruebas útil.
+-**Escala real**, En lo único que interactua el mapa y el codigo del robot es en la medición del ultrasonido, de este modo se logra un entorno de pruebas útil.
 
 -El robot busca en una esquina y comienza a mapear rodeando el mapa. Como se ve al final de la ejecución el robot guarda en memoria el obstaculo. El paso que sigue solo es recoger el objeto identificado.
 
