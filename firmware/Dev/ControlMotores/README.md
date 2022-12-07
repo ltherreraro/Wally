@@ -1,32 +1,33 @@
 # zephyrOS rp2040 Control motores carro arduino
 
-## Pines
-Motor A
-GPIO 16 ALIASES_OVERLEAY led1 -> CONS ctr1A FWD
-GPIO 17 ALIASES_OVERLEAY led2 -> CONS ctr2A REV
-GPIO 3  ALIASES_OVERLEAY led5 -> CONS enA ENABLE
+## Pine
 
-Motor B
-GPIO 14 ALIASES_OVERLEAY led3 -> CONS ctr1B FWD
-GPIO 15 ALIASES_OVERLEAY led4 -> CONS ctr2B REV
-GPIO 4 ALIASES_OVERLEAY led6 -> CONS enB ENABLE
+### Motor A
+- GPIO 16 ALIASES_OVERLEAY led1 -> CONS ctr1A FWD
+- GPIO 17 ALIASES_OVERLEAY led2 -> CONS ctr2A REV
+- GPIO 3  ALIASES_OVERLEAY led5 -> CONS enA ENABLE
+
+### Motor B
+- GPIO 14 ALIASES_OVERLEAY led3 -> CONS ctr1B FWD
+- GPIO 15 ALIASES_OVERLEAY led4 -> CONS ctr2B REV
+- GPIO 4 ALIASES_OVERLEAY led6 -> CONS enB ENABLE
 
 ## Formulas 
 
 ### Variables
-r radio de la rueda = 3.25cm
-d diamentro de la rueda = 6cm
-dr distancia de los centros rueda = 14
-rr radio de la distancia de centros = 7
+- r: radio de la rueda = 3.25cm
+- d: diamentro de la rueda = 6cm
+- dr: distancia de los centros rueda = 14
+- rr: radio de la distancia de centros = 7
 
 ### Ecuaciones
 
 Se debe encontrar la relacion entre el perimetro de la distancia de las ruedas y el perimetro de la rueda
 ya que posteriormente se usara esta relacion para calcular los giros y las distancias.
 
-P(giro)= 2*pi*dr = 2*3,14*3.25 = 43.98cm
-P(rueda)= 2*pi*r = 2*3,14*3.25 = 20.42cm
-Relacion = p(giro)/p(rueda) = 43.98/20.41 = 2.15
+- P(giro)= 2*pi*dr = 2*3,14*3.25 = 43.98cm
+- P(rueda)= 2*pi*r = 2*3,14*3.25 = 20.42cm
+- Relacion = p(giro)/p(rueda) = 43.98/20.41 = 2.15
 
 
 ## Funcionamiento
@@ -43,9 +44,9 @@ dar un giro completo, ahora usando la relacion se tendria:
 
 Ahora aplicando una de 3 siemple se puede usar el tiempo que tarda en realizar los diferentes angulo de giro
 llegando a la siguiente formula donde tgirocom es el tiempo de giro completo es decir 0.4 s y x son los grados que se quiere girar el carro.
-``
+```
 #define PGRADOS(x) K_SECONDS(2.15*TGIROCOM*(x/360))
-``
+```
 ### Distancia
 
 De manera similar se realizo la distancia y sabiendo que la rueda tiene 2.15 cm de radio en 0.4 seg habra recorrido 2.15 cm
@@ -66,7 +67,7 @@ y finalmente la velocidad.
 
 ```
 void giro(enum direction_mot dir, int grados, int vel)
-``
+```
 
 Por otro lado esta la funcion distancia que recibe 3 parametros la direccion en la que se quiere mover el carro, se pueden usar
 los valores FWD para adelante y RWD para atras, la otra entrada es velocidad y finalmente los cm que se quiere recorrer en la 
