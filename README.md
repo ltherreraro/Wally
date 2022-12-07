@@ -45,7 +45,7 @@ Adicionalmente se usara un modulo secundario ESP8266 para el control de los moto
 
 A continuacion se muestra un diagrama general
 
-![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/diag1.PNG))
+![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Diagrama%20RP2040%20embebidos-Page-1.jpg)
 
 ![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/diag2.PNG))
 
