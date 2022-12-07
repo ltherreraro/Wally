@@ -80,18 +80,6 @@ Para este proyecto se diseño una placa con las condiciones necesarias para sopo
 ![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Placa%20proyecto%20Embebidos%202.PNG))
 
 
-#### Diseño modelo 3D 
-El diseño 3D del carro y sus partes se realizó tomando cada pieza del carro por aparte para menor compljidad,esto permitió un mejor diseño 3D el cual se muestra acontinuación:
-
-Diseño 3D
-
-#### Montaje para prototipo
-El prototipo final a presentar se realizó en cartón ya que se solicita inversión para poder hacerlo en 9impresión 3D ya que esta tecnologia para Wally salia bastante costosa en el momento, sin embargo se realizó el montaje con las ruedas y todos los perifericos que se solicitaron en el programa, El prototipo es el siguiente:
-
-Foto prototipo final
-
-Para un analisis más detallado ver documentación anexa donde usted podrá encontrar los modelos 3D, la programación del sistema y demás particiones que hicieron posible este proyecto.
-
 
 
 
