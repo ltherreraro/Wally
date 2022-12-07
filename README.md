@@ -47,7 +47,7 @@ A continuacion se muestra un diagrama general
 
 ![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Diagrama%20RP2040%20embebidos-Page-1.jpg)
 
-![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/diag2.PNG))
+![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/diag2.PNG)
 
 Finalmente los datasheet de los modulos a usar
 - [ESP32](https://github.com/ltherreraro/Wally/blob/main/Datasheet/esp32-sl_specification.pdf)
