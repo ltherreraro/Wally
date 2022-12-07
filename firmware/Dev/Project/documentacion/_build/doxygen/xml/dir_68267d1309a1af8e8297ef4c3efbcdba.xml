@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>/home/tatiana/projects/zephyros-rp2040-example3/Project/src</compoundname>
+    <innerfile refid="main_8c">main.c</innerfile>
+    <innerfile refid="motores_8c">motores.c</innerfile>
+    <innerfile refid="servo_8c">servo.c</innerfile>
+    <innerfile refid="ultrasonido_8c">ultrasonido.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="md__home_tatiana_projects_zephyros_rp2040_example3_Project_documentacion_stylehtml_3D" kind="page">
+    <compoundname>md__home_tatiana_projects_zephyros_rp2040_example3_Project_documentacion_stylehtml_3D</compoundname>
+    <title>Diseño 3D</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Para el diseño de la estructura se realizó en el programa FreeCAD de software libre, cada pieza se tomó por separado para ensamblar después de la impresión, esta es la mejor forma de presentar el carro ya que cuenta con un diseño optimo para las labores que tiene presupuestado hacer y su peso ligero, sin embargo al realizar las cotizacion en la empresa arrow (Bogota, Colombia) para imprimir su costo aproximado es de 600.000 pesos y debido a los recursos limitados se obto por dejar el modelo de impresion para un futuro y para realizar el prototipo se realizo con carton.</para>
+<sect2 id="md__home_tatiana_projects_zephyros_rp2040_example3_Project_documentacion_stylehtml_3D_1autotoc_md10">
+<title>Pieza principal</title>
+<para>La pieza principal va sujeto las ruegas y las piezas que recolectar los desechos, se hizo con orificios para encagar las piezas para evitar el uso de tornillos y garantizar la fijacion de las piezas.</para>
+<para><image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/Pieza%20principal.JPG" inline="yes"></image>
+</para>
+</sect2>
+<sect2 id="md__home_tatiana_projects_zephyros_rp2040_example3_Project_documentacion_stylehtml_3D_1autotoc_md11">
+<title>Piezas secundarias y complementarias</title>
+<para><image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/Deslizar.JPG" inline="yes"></image>
+ <image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/Recogedor.JPG" inline="yes"></image>
+ <image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/Soporte%20de%20rueda.JPG" inline="yes"></image>
+ <image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/Soporte%20servo.JPG" inline="yes"></image>
+ <image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/Recogedor.JPG" inline="yes"></image>
+</para>
+</sect2>
+<sect1 id="md__home_tatiana_projects_zephyros_rp2040_example3_Project_documentacion_stylehtml_3D_1autotoc_md12">
+<title>Prototipo</title>
+<para>Para el prototipo como se indicio se diseño un sistema a base de cartón que se puede ver a continuacion. <image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/Prototipo1-PhotoRoom%20(1).png" inline="yes"></image>
+ <image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/Prototipo2-PhotoRoom.png" inline="yes"></image>
+ <image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/Prototipo3-PhotoRoom.png" inline="yes"></image>
+</para>
+</sect1>
+<sect1 id="md__home_tatiana_projects_zephyros_rp2040_example3_Project_documentacion_stylehtml_3D_1autotoc_md13">
+<title>Brochure</title>
+<para><image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Brochure%20Wally_page-0001%20(1).jpg" inline="yes"></image>
+ </para>
+</sect1>
+    </detaileddescription>
+    <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/documentacion/stylehtml/3D.md"/>
+  </compounddef>
+</doxygen>

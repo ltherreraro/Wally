@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ultrasonido_8c" kind="file" language="C++">
+    <compoundname>ultrasonido.c</compoundname>
+    <includes local="no">zephyr/kernel.h</includes>
+    <includes local="no">zephyr/drivers/gpio.h</includes>
+    <includes local="yes">ultrasonido.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includedby refid="main_8c" local="yes">/home/tatiana/projects/zephyros-rp2040-example3/Project/src/main.c</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>zephyr/drivers/gpio.h</label>
+      </node>
+      <node id="2">
+        <label>zephyr/kernel.h</label>
+      </node>
+      <node id="1">
+        <label>/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c</label>
+        <link refid="ultrasonido_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>ultrasonido.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/tatiana/projects/zephyros-rp2040-example3/Project/src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="1">
+        <label>/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c</label>
+        <link refid="ultrasonido_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="ultrasonido_8c_1af096b3b0209b19c7b402d60c351e81ce" prot="public" static="yes" mutable="no">
+        <type>const struct gpio_dt_spec</type>
+        <definition>const struct gpio_dt_spec Echo1</definition>
+        <argsstring></argsstring>
+        <name>Echo1</name>
+        <initializer>= GPIO_DT_SPEC_GET_OR( DT_ALIAS(echo1) , gpios, {0})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="1" column="0" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1a4b02c4b5b4777a171d4666275c21db7e" prot="public" static="yes" mutable="no">
+        <type>const struct gpio_dt_spec</type>
+        <definition>const struct gpio_dt_spec Trig1</definition>
+        <argsstring></argsstring>
+        <name>Trig1</name>
+        <initializer>= GPIO_DT_SPEC_GET_OR( DT_ALIAS(trig1) , gpios, {0})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="1" column="0" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1a4274755b4842d64347f0458d3299669a" prot="public" static="yes" mutable="no">
+        <type>const struct gpio_dt_spec</type>
+        <definition>const struct gpio_dt_spec Echo2</definition>
+        <argsstring></argsstring>
+        <name>Echo2</name>
+        <initializer>= GPIO_DT_SPEC_GET_OR( DT_ALIAS(echo2) , gpios, {0})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="1" column="0" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1a5e9c9fe4b0298d815443c5c7c709b412" prot="public" static="yes" mutable="no">
+        <type>const struct gpio_dt_spec</type>
+        <definition>const struct gpio_dt_spec Trig2</definition>
+        <argsstring></argsstring>
+        <name>Trig2</name>
+        <initializer>= GPIO_DT_SPEC_GET_OR( DT_ALIAS(trig2) , gpios, {0})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="1" column="0" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1afbe237a5e50f4a3db3102d2feae8f39a" prot="public" static="yes" mutable="no">
+        <type>const struct gpio_dt_spec</type>
+        <definition>const struct gpio_dt_spec Echo3</definition>
+        <argsstring></argsstring>
+        <name>Echo3</name>
+        <initializer>= GPIO_DT_SPEC_GET_OR( DT_ALIAS(echo3) , gpios, {0})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="1" column="0" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1a9191f02be3cbe5d9dc90e48db2b0af4f" prot="public" static="yes" mutable="no">
+        <type>const struct gpio_dt_spec</type>
+        <definition>const struct gpio_dt_spec Trig3</definition>
+        <argsstring></argsstring>
+        <name>Trig3</name>
+        <initializer>= GPIO_DT_SPEC_GET_OR( DT_ALIAS(trig3) , gpios, {0})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="1" column="0" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1a6b24be1257d13ce5685c65269351d968" prot="public" static="yes" mutable="no">
+        <type>const struct gpio_dt_spec</type>
+        <definition>const struct gpio_dt_spec Echo4</definition>
+        <argsstring></argsstring>
+        <name>Echo4</name>
+        <initializer>= GPIO_DT_SPEC_GET_OR( DT_ALIAS(echo4) , gpios, {0})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="1" column="0" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1ad77433e1bfbd0b5b6e59d8faa097aed5" prot="public" static="yes" mutable="no">
+        <type>const struct gpio_dt_spec</type>
+        <definition>const struct gpio_dt_spec Trig4</definition>
+        <argsstring></argsstring>
+        <name>Trig4</name>
+        <initializer>= GPIO_DT_SPEC_GET_OR( DT_ALIAS(trig4) , gpios, {0})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="1" column="0" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1a09e7078913cdcb091584dea4cbde5dd0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ConfGpio5</definition>
+        <argsstring></argsstring>
+        <name>ConfGpio5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="25" column="5" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1a442ca60a034bfc7216b4ef5fff2f2389" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ConfGpio6</definition>
+        <argsstring></argsstring>
+        <name>ConfGpio6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="26" column="5" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1a610b706b58431ca77622114269dff919" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ConfGpio7</definition>
+        <argsstring></argsstring>
+        <name>ConfGpio7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="27" column="5" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1a1097e7ff04843d4018a56b6ff3f7b986" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ConfGpio8</definition>
+        <argsstring></argsstring>
+        <name>ConfGpio8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="28" column="5" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1a376bd6c8b6364ca0e68ad89bd806dbda" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ConfGpio9</definition>
+        <argsstring></argsstring>
+        <name>ConfGpio9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="29" column="5" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1a19dda441c26352f3f426798ef3ab20bc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ConfGpio10</definition>
+        <argsstring></argsstring>
+        <name>ConfGpio10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="30" column="5" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1ad9b4cda77482a8a7aefa02ad4069556a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ConfGpio18</definition>
+        <argsstring></argsstring>
+        <name>ConfGpio18</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="31" column="5" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1ac989eff935ae7e52792a81379b8b8884" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ConfGpio26</definition>
+        <argsstring></argsstring>
+        <name>ConfGpio26</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="32" column="5" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ultrasonido_8c_1a14d6e70b30469b8c9ecfa0ca6aba1e77" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool trig1signal</definition>
+        <argsstring></argsstring>
+        <name>trig1signal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="33" column="6" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ultrasonido_8c_1ac97e06d1c476ad3fb337554445f1b6ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void getDistance</definition>
+        <argsstring>(float *distance)</argsstring>
+        <name>getDistance</name>
+        <param>
+          <type>float *</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+<para>Calcula la distancia del objeto. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out, Indica la distancia en cm </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="39" column="6" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="39" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="ultrasonido_8c_1a4a56603dba9f03c25689d17cdb186fe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void uscounter</definition>
+        <argsstring>(uint8_t us)</argsstring>
+        <name>uscounter</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>us</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tiempo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>en milisegundos </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" line="127" column="6" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c" bodystart="127" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>{Maicol Fontecha} ({mdfontechad}) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2022-12-06</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2022 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;zephyr/kernel.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;zephyr/drivers/gpio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ultrasonido.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">gpio_dt_spec<sp/><ref refid="ultrasonido_8c_1af096b3b0209b19c7b402d60c351e81ce" kindref="member">Echo1</ref><sp/>=<sp/>GPIO_DT_SPEC_GET_OR(ECHO_PIN5,<sp/>gpios,<sp/>{0});</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">gpio_dt_spec<sp/><ref refid="ultrasonido_8c_1a4b02c4b5b4777a171d4666275c21db7e" kindref="member">Trig1</ref><sp/>=<sp/>GPIO_DT_SPEC_GET_OR(TRIG_PIN6,<sp/>gpios,<sp/>{0});</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">gpio_dt_spec<sp/><ref refid="ultrasonido_8c_1a4274755b4842d64347f0458d3299669a" kindref="member">Echo2</ref><sp/>=<sp/>GPIO_DT_SPEC_GET_OR(ECHO_PIN7,<sp/>gpios,<sp/>{0});</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">gpio_dt_spec<sp/><ref refid="ultrasonido_8c_1a5e9c9fe4b0298d815443c5c7c709b412" kindref="member">Trig2</ref><sp/>=<sp/>GPIO_DT_SPEC_GET_OR(TRIG_PIN8,<sp/>gpios,<sp/>{0});</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">gpio_dt_spec<sp/><ref refid="ultrasonido_8c_1afbe237a5e50f4a3db3102d2feae8f39a" kindref="member">Echo3</ref><sp/>=<sp/>GPIO_DT_SPEC_GET_OR(ECHO_PIN9,<sp/>gpios,<sp/>{0});</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">gpio_dt_spec<sp/><ref refid="ultrasonido_8c_1a9191f02be3cbe5d9dc90e48db2b0af4f" kindref="member">Trig3</ref><sp/>=<sp/>GPIO_DT_SPEC_GET_OR(TRIG_PIN10,<sp/>gpios,<sp/>{0});</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">gpio_dt_spec<sp/><ref refid="ultrasonido_8c_1a6b24be1257d13ce5685c65269351d968" kindref="member">Echo4</ref><sp/>=<sp/>GPIO_DT_SPEC_GET_OR(ECHO_PIN18,<sp/>gpios,<sp/>{0});</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">gpio_dt_spec<sp/><ref refid="ultrasonido_8c_1ad77433e1bfbd0b5b6e59d8faa097aed5" kindref="member">Trig4</ref><sp/>=<sp/>GPIO_DT_SPEC_GET_OR(TRIG_PIN26,<sp/>gpios,<sp/>{0});</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ultrasonido_8c_1a09e7078913cdcb091584dea4cbde5dd0" kindref="member">ConfGpio5</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ultrasonido_8c_1a442ca60a034bfc7216b4ef5fff2f2389" kindref="member">ConfGpio6</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ultrasonido_8c_1a610b706b58431ca77622114269dff919" kindref="member">ConfGpio7</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ultrasonido_8c_1a1097e7ff04843d4018a56b6ff3f7b986" kindref="member">ConfGpio8</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ultrasonido_8c_1a376bd6c8b6364ca0e68ad89bd806dbda" kindref="member">ConfGpio9</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ultrasonido_8c_1a19dda441c26352f3f426798ef3ab20bc" kindref="member">ConfGpio10</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ultrasonido_8c_1ad9b4cda77482a8a7aefa02ad4069556a" kindref="member">ConfGpio18</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ultrasonido_8c_1ac989eff935ae7e52792a81379b8b8884" kindref="member">ConfGpio26</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="ultrasonido_8c_1a14d6e70b30469b8c9ecfa0ca6aba1e77" kindref="member">trig1signal</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ultrasonido_8c_1ac97e06d1c476ad3fb337554445f1b6ab" kindref="member">getDistance</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>distance)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!device_is_ready(<ref refid="ultrasonido_8c_1af096b3b0209b19c7b402d60c351e81ce" kindref="member">Echo1</ref>.port)<sp/>||<sp/>!device_is_ready(<ref refid="ultrasonido_8c_1a4b02c4b5b4777a171d4666275c21db7e" kindref="member">Trig1</ref>.port)<sp/>||<sp/>!device_is_ready(<ref refid="ultrasonido_8c_1a4274755b4842d64347f0458d3299669a" kindref="member">Echo2</ref>.port)<sp/>||<sp/>!device_is_ready(<ref refid="ultrasonido_8c_1a5e9c9fe4b0298d815443c5c7c709b412" kindref="member">Trig2</ref>.port)<sp/>||<sp/>!device_is_ready(<ref refid="ultrasonido_8c_1afbe237a5e50f4a3db3102d2feae8f39a" kindref="member">Echo3</ref>.port)<sp/>||<sp/>!device_is_ready(<ref refid="ultrasonido_8c_1a9191f02be3cbe5d9dc90e48db2b0af4f" kindref="member">Trig3</ref>.port)<sp/>||<sp/>!device_is_ready(<ref refid="ultrasonido_8c_1a6b24be1257d13ce5685c65269351d968" kindref="member">Echo4</ref>.port)<sp/>||<sp/>!device_is_ready(<ref refid="ultrasonido_8c_1ad77433e1bfbd0b5b6e59d8faa097aed5" kindref="member">Trig4</ref>.port))</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ultrasonido_8c_1a09e7078913cdcb091584dea4cbde5dd0" kindref="member">ConfGpio5</ref><sp/>=<sp/>gpio_pin_configure_dt(&amp;<ref refid="ultrasonido_8c_1af096b3b0209b19c7b402d60c351e81ce" kindref="member">Echo1</ref>,<sp/>GPIO_INPUT);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ultrasonido_8c_1a442ca60a034bfc7216b4ef5fff2f2389" kindref="member">ConfGpio6</ref><sp/>=<sp/>gpio_pin_configure_dt(&amp;<ref refid="ultrasonido_8c_1a4b02c4b5b4777a171d4666275c21db7e" kindref="member">Trig1</ref>,<sp/>GPIO_OUTPUT_ACTIVE);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ultrasonido_8c_1a610b706b58431ca77622114269dff919" kindref="member">ConfGpio7</ref><sp/>=<sp/>gpio_pin_configure_dt(&amp;<ref refid="ultrasonido_8c_1a4274755b4842d64347f0458d3299669a" kindref="member">Echo2</ref>,<sp/>GPIO_INPUT);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ultrasonido_8c_1a1097e7ff04843d4018a56b6ff3f7b986" kindref="member">ConfGpio8</ref><sp/>=<sp/>gpio_pin_configure_dt(&amp;<ref refid="ultrasonido_8c_1a5e9c9fe4b0298d815443c5c7c709b412" kindref="member">Trig2</ref>,<sp/>GPIO_OUTPUT_ACTIVE);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ultrasonido_8c_1a376bd6c8b6364ca0e68ad89bd806dbda" kindref="member">ConfGpio9</ref><sp/>=<sp/>gpio_pin_configure_dt(&amp;<ref refid="ultrasonido_8c_1afbe237a5e50f4a3db3102d2feae8f39a" kindref="member">Echo3</ref>,<sp/>GPIO_INPUT);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ultrasonido_8c_1a19dda441c26352f3f426798ef3ab20bc" kindref="member">ConfGpio10</ref><sp/>=<sp/>gpio_pin_configure_dt(&amp;<ref refid="ultrasonido_8c_1a9191f02be3cbe5d9dc90e48db2b0af4f" kindref="member">Trig3</ref>,<sp/>GPIO_OUTPUT_ACTIVE);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ultrasonido_8c_1ad9b4cda77482a8a7aefa02ad4069556a" kindref="member">ConfGpio18</ref><sp/>=<sp/>gpio_pin_configure_dt(&amp;<ref refid="ultrasonido_8c_1a6b24be1257d13ce5685c65269351d968" kindref="member">Echo4</ref>,<sp/>GPIO_INPUT);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ultrasonido_8c_1ac989eff935ae7e52792a81379b8b8884" kindref="member">ConfGpio26</ref><sp/>=<sp/>gpio_pin_configure_dt(&amp;<ref refid="ultrasonido_8c_1ad77433e1bfbd0b5b6e59d8faa097aed5" kindref="member">Trig4</ref>,<sp/>GPIO_OUTPUT_ACTIVE);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="ultrasonido_8c_1a09e7078913cdcb091584dea4cbde5dd0" kindref="member">ConfGpio5</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1a442ca60a034bfc7216b4ef5fff2f2389" kindref="member">ConfGpio6</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1a610b706b58431ca77622114269dff919" kindref="member">ConfGpio7</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1a1097e7ff04843d4018a56b6ff3f7b986" kindref="member">ConfGpio8</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1a376bd6c8b6364ca0e68ad89bd806dbda" kindref="member">ConfGpio9</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1a19dda441c26352f3f426798ef3ab20bc" kindref="member">ConfGpio10</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1ad9b4cda77482a8a7aefa02ad4069556a" kindref="member">ConfGpio18</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1ac989eff935ae7e52792a81379b8b8884" kindref="member">ConfGpio26</ref><sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>stop_time<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>start_time<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>cycles_spent<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>time;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aux<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TRIGG<sp/>SIGNAL<sp/>,<sp/>pulso<sp/>de<sp/>10u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ultrasonido_8c_1a14d6e70b30469b8c9ecfa0ca6aba1e77" kindref="member">trig1signal</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gpio_pin_set_dt(&amp;<ref refid="ultrasonido_8c_1a4b02c4b5b4777a171d4666275c21db7e" kindref="member">Trig1</ref>,<sp/>!<ref refid="ultrasonido_8c_1a14d6e70b30469b8c9ecfa0ca6aba1e77" kindref="member">trig1signal</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ultrasonido_8c_1a4a56603dba9f03c25689d17cdb186fe7" kindref="member">uscounter</ref>(10);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gpio_pin_set_dt(&amp;<ref refid="ultrasonido_8c_1a4b02c4b5b4777a171d4666275c21db7e" kindref="member">Trig1</ref>,<sp/><ref refid="ultrasonido_8c_1a14d6e70b30469b8c9ecfa0ca6aba1e77" kindref="member">trig1signal</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Echo<sp/>lecture</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_time<sp/>=<sp/>k_cycle_get_32();<sp/></highlight><highlight class="comment">//<sp/>tiempo<sp/>inicial</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val<sp/>=<sp/>gpio_pin_get_dt(&amp;<ref refid="ultrasonido_8c_1af096b3b0209b19c7b402d60c351e81ce" kindref="member">Echo1</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(gpio_pin_get_dt(&amp;<ref refid="ultrasonido_8c_1af096b3b0209b19c7b402d60c351e81ce" kindref="member">Echo1</ref>)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stop_time<sp/>=<sp/>k_cycle_get_32();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cycles_spent<sp/>=<sp/>stop_time<sp/>-<sp/>start_time;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cycles_spent<sp/>&gt;<sp/>1064000)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printk(</highlight><highlight class="stringliteral">&quot;entre<sp/>aca<sp/>%d<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>cycles_spent);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>si<sp/>es<sp/>más<sp/>de<sp/>3<sp/>metros,<sp/>busque<sp/>otra<sp/>lectura.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_time<sp/>=<sp/>k_cycle_get_32();<sp/></highlight><highlight class="comment">//<sp/>reestableciendo<sp/>el<sp/>start<sp/>time.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(gpio_pin_get_dt(&amp;<ref refid="ultrasonido_8c_1af096b3b0209b19c7b402d60c351e81ce" kindref="member">Echo1</ref>)<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stop_time<sp/>=<sp/>k_cycle_get_32();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cycles_spent<sp/>=<sp/>stop_time<sp/>-<sp/>start_time;<sp/></highlight><highlight class="comment">//<sp/>contando<sp/>los<sp/>ciclos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printk(</highlight><highlight class="stringliteral">&quot;Lectura<sp/>en<sp/>ciclos:<sp/>%d&lt;&lt;\n<sp/>&quot;</highlight><highlight class="normal">,<sp/>cycles_spent);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time<sp/>=<sp/>cycles_spent<sp/>*<sp/>0.00000000751<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*distance<sp/>=<sp/>time<sp/>*<sp/>343.3<sp/>*<sp/>100;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;distancia<sp/>en<sp/>cm:<sp/>%.3f<sp/>cm<sp/>&lt;&lt;&quot;</highlight><highlight class="normal">,<sp/>*distance);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="ultrasonido_8c_1a09e7078913cdcb091584dea4cbde5dd0" kindref="member">ConfGpio5</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1a442ca60a034bfc7216b4ef5fff2f2389" kindref="member">ConfGpio6</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1a610b706b58431ca77622114269dff919" kindref="member">ConfGpio7</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1a1097e7ff04843d4018a56b6ff3f7b986" kindref="member">ConfGpio8</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1a376bd6c8b6364ca0e68ad89bd806dbda" kindref="member">ConfGpio9</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1a19dda441c26352f3f426798ef3ab20bc" kindref="member">ConfGpio10</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1ad9b4cda77482a8a7aefa02ad4069556a" kindref="member">ConfGpio18</ref><sp/>&lt;<sp/>0<sp/>||<sp/><ref refid="ultrasonido_8c_1ac989eff935ae7e52792a81379b8b8884" kindref="member">ConfGpio26</ref><sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printk(</highlight><highlight class="stringliteral">&quot;fail&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k_msleep(1000);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ultrasonido_8c_1a4a56603dba9f03c25689d17cdb186fe7" kindref="member">uscounter</ref>(uint8_t<sp/>us)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>stop_time<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>start_time<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>cycles_spent<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_time<sp/>=<sp/>k_cycle_get_32();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stop_time<sp/>=<sp/>k_cycle_get_32();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cycles_spent<sp/>=<sp/>stop_time<sp/>-<sp/>start_time;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(cycles_spent<sp/>&lt;=<sp/>133<sp/>*<sp/>us);<sp/></highlight><highlight class="comment">//<sp/>133<sp/>ciclos<sp/>es<sp/>un<sp/>us.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*//clock-frequency<sp/>=<sp/>&lt;133000000&gt;;</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//1<sp/>ciclo<sp/>:<sp/>00000000751s</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printk(&quot;ciclos<sp/>usados:<sp/>%d<sp/>&lt;&lt;&lt;\n&quot;,<sp/>cycles_spent);</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printk(&quot;start:<sp/>%d<sp/>&lt;&lt;&lt;\n&quot;,<sp/>start_time);</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printk(&quot;stop:<sp/><sp/>%d<sp/>&lt;&lt;&lt;\n&quot;,<sp/>stop_time);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">//###definición<sp/>funciones<sp/>usadas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">/*static<sp/>inline<sp/>int<sp/>gpio_pin_set_dt(const<sp/>struct<sp/>gpio_dt_spec<sp/>*spec,<sp/>int<sp/>value)</highlight></codeline>
+<codeline lineno="149"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>gpio_pin_set(spec-&gt;port,<sp/>spec-&gt;pin,<sp/>value);</highlight></codeline>
+<codeline lineno="151"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Current<sp/>hardware<sp/>clock<sp/>up-counter<sp/>(in<sp/>cycles).</highlight></codeline>
+<codeline lineno="154"><highlight class="comment">static<sp/>inline<sp/>uint32_t<sp/>k_cycle_get_32(void)</highlight></codeline>
+<codeline lineno="155"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="156"><highlight class="comment">return<sp/>arch_k_cycle_get_32();</highlight></codeline>
+<codeline lineno="157"><highlight class="comment">}<sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/ultrasonido.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Introducciòn</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="index_1md__home_tatiana_projects_zephyros_rp2040_example3_Project_documentacion_stylehtml_mainpage"/> Es un projecto embebido para recolectar basura cuyo objetivo es detectar desechos a traves de una camara controlada por el modulo esp32cam y el control de movimientos junto con los sensores son controlados por la RP2040, el firmare se basa se zephyr OS</para>
+<para>Es un dispositivo robótico con capacidad de navegación por espacios abiertos y cerrados, reconocimiento y transmisión de imagen y video, con la finalidad de ver e identificar objetos del entorno y disponer de ellos (levantarlos, recogerlos y llevarlos a un sitio específico). Inicialmente pensado para labores de aseo, puede ser fácilmente utilizado en otros entornos que por sus condiciones representen un riesgo para la vida humana y animal (recintos con riesgos biológicos, edificios al borde del colapso, entre otros), que se puede validar a través de una aplicación</para>
+<sect1 id="index_1autotoc_md1">
+<title>Boards Soportadas</title>
+<para>Esta soportado para la ESP32CAM y la RP2040, debido a la versatilidad de Zephyr Os facilmente puede ser llevado a otras arquitecturas solo se requeriria definir los puertos de la nueva tarjeta a utiliar.</para>
+<sect2 id="index_1autotoc_md2">
+<title>Alcance</title>
+<para>Durante la primera iteración, estamos trabajando para que Wally pueda recorrer un espacio cerrado relativamente pequeño (por ejemplo, un salón) evitando obstáculos y la identificación de objetos a través de la cámara de manera limitada.</para>
+</sect2>
+</sect1>
+<sect1 id="index_1autotoc_md3">
+<title>Sistema embebido</title>
+<para>Es un sistema entregal al que se le diseño la tarjeta, el modelo 3D y el firmware, para efectos de prueba y debido al presupuesto el modelo 3D se fabrico en carton.</para>
+</sect1>
+<sect1 id="index_1autotoc_md4">
+<title>Materiales</title>
+<para>Cada uno de los elementos utilizados en el hardware del proyecto Wally esta aquí y sus respectivas hojas de datos. <ulink url="https://github.com/ltherreraro/Wally/blob/main/Datasheet/esp32-sl_specification.pdf">ESP32</ulink><itemizedlist>
+<listitem><para><ulink url="https://github.com/ltherreraro/Wally/blob/main/Datasheet/ESP32-CAM%20Product%20Specification.pdf">ESP32CAM</ulink></para>
+</listitem><listitem><para><ulink url="https://www.make-it.ca/nodemcu-details-specifications/">Nodemcu</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/ltherreraro/Wally/blob/main/Datasheet/0a-esp8266ex_datasheet_en.pdf">ESP8266</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/ltherreraro/Wally/blob/main/Datasheet/MG90S_Tower-Pro%20(1).pdf">Servo MG90</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/ltherreraro/Wally/blob/main/Datasheet/sg90_datasheet%20(1).pdf">Servo SG90</ulink></para>
+</listitem><listitem><para><ulink url="https://ferretronica.com/products/motorreductor-500-gr-cm-1000-rpm-6v?variant=12391693877341&amp;currency=COP&amp;utm_medium=product_sync&amp;utm_source=google&amp;utm_content=sag_organic&amp;utm_campaign=sag_organic&amp;utm_campaign=gs-2021-10-19&amp;utm_source=google&amp;utm_medium=smart_campaign&amp;gclid=Cj0KCQjwjbyYBhCdARIsAArC6LKaKwvKPRHye8ZWSAgEkHbSm4rjs0Gm-KYxnCncWKSN3TIoLXUkZbEaAqU5EALw_wcB">Motor</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/ltherreraro/Wally/blob/main/Datasheet/HCSR04%20(1).pdf">Ultrasonido</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/ltherreraro/Wally/blob/main/Datasheet/datasheet-l9110%20(1).pdf">Puente H</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/ltherreraro/Wally/blob/main/Datasheet/2001081204_Shikues-AMS1117-1-2_C475600.pdf">Regulador</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/ltherreraro/Wally/blob/main/Datasheet/rp2040-datasheet.pdf">RP2040 pico</ulink></para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="index_1autotoc_md5">
+<title>Digrama de caja negra</title>
+<para>El módulo ESP32-CAM será el modulo principal tiene algunas características técnicas como son:</para>
+<para><itemizedlist>
+<listitem><para>Conectividad: WiFi 802.11b/g/n + Bluetooth 4.2 con BLE. Soporta carga de imagen por Wifi.</para>
+</listitem><listitem><para>Conexiones: UART, SPI, I2C, y PWM. Tiene 9 pines GPIO.</para>
+</listitem><listitem><para>Frecuencia de reloj: hasta 160Mhz.</para>
+</listitem><listitem><para>Potencia de cómputo del microcontrolador: hasta 600 DMIPS.</para>
+</listitem><listitem><para>Memoria: 520KB de SRAM + 4MB de PSRAM + SD slot para tarjetas</para>
+</listitem><listitem><para>Extras: tiene múltiples modos de reposo, firmware actualizable por OTA, y LED para uso de memoria flash built-in.</para>
+</listitem><listitem><para>Cámara: soporta cámaras OV2640 que pueden venir en el pack o comprarse independientemente. Este tipo de cámaras tienen:</para>
+</listitem><listitem><para>2 MP en su sensor</para>
+</listitem><listitem><para>Tamaño de arreglo UXGA de 1622×1200 px</para>
+</listitem><listitem><para>Formato de salida YUV422, YUV420, RGB565, RGB555 y compresión de datos de 8-bit.</para>
+</listitem><listitem><para>Puede transferir imagen entre 15 y 60 FPS.</para>
+</listitem></itemizedlist>
+</para>
+<para>Adicionalmente se usara un modulo secundario ESP8266 para el control de los motores y <bold>modulo ultrasonido</bold>, el sistema en general tiene diferentes módulos como:<itemizedlist>
+<listitem><para>Modulo de alimentación: Consta de la batería y el sistema de regulación</para>
+</listitem><listitem><para>Modulo de movimiento: Inicialmente se plantea que se requiere un puente H de dos canales y dos motores.</para>
+</listitem><listitem><para>Modulo de movimiento detección: Consta de un servomotor de 360 grados para rotar la cámara 360</para>
+</listitem><listitem><para>Modulo de movimiento recolección: Inicialmente se plantea como dos servomotores</para>
+</listitem><listitem><para>Modulo de detección: Consta de una cámara para reconocer basura y ultrasonido para detectar obstáculos también la cercanía de los objetos</para>
+</listitem><listitem><para>Modulo de Indicadores y botones: Consta de leds para notificar al usuario conexión con el servidor, encendido, falla y botones de encendido también de reset. Modulo SD: Que se encargara de guardar las imágenes para ser enviadas en caso de perdida de conexión.</para>
+</listitem></itemizedlist>
+</para>
+<para>A continuación se muestra un diagrama general</para>
+<para><image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/Diagrama%20RP2040%20embebidos-Page-1.jpg" inline="yes"></image>
+</para>
+<para><image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/diag2.PNG" inline="yes"></image>
+</para>
+<sect2 id="index_1autotoc_md6">
+<title>Requerimientos Funcionales</title>
+<para>Recepción y transmisión de imágenes, streaming video, detección de imágenes vía imagen y sensor ultrasonido, capacidad de navegación, recolección del objeto, conectividad inalámbrica (Wi-Fi, Bluetooth). </para>
+</sect2>
+<sect2 id="index_1autotoc_md7">
+<title>Requerimientos no funcionales</title>
+<para>Estabilidad, fiabilidad, precisión el el reconocimiento y recolección de objeto, facilidad de uso.</para>
+<para><table rows="7" cols="3"><row>
+<entry thead="yes"><para>Equipo   </para>
+</entry><entry thead="yes"><para>Corriente (in)   </para>
+</entry><entry thead="yes"><para>Voltaje (in)    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>ESP32CAM   </para>
+</entry><entry thead="no"><para>500mA   </para>
+</entry><entry thead="no"><para>3.3V -5V    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>NODEMCU   </para>
+</entry><entry thead="no"><para>300mA   </para>
+</entry><entry thead="no"><para>3,3V - 5V    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>SERVOR   </para>
+</entry><entry thead="no"><para>400mA   </para>
+</entry><entry thead="no"><para>5V    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>MOTOR   </para>
+</entry><entry thead="no"><para>400mA   </para>
+</entry><entry thead="no"><para>6V-9V    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>ULTRASONIO   </para>
+</entry><entry thead="no"><para>15mA   </para>
+</entry><entry thead="no"><para>5V    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>L9110(PUENTE H)   </para>
+</entry><entry thead="no"><para>0.5mA   </para>
+</entry><entry thead="no"><para>2.5V-12V   </para>
+</entry></row>
+</table>
+</para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/documentacion/stylehtml/mainpage.md"/>
+  </compounddef>
+</doxygen>

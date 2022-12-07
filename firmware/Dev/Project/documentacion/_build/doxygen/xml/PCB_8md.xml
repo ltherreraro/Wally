@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="PCB_8md" kind="file" language="Markdown">
+    <compoundname>PCB.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>PCB</highlight></codeline>
+<codeline><highlight class="normal">Se<sp/>desarollo<sp/>usando<sp/>Kicad<sp/>debido<sp/>a<sp/>que<sp/>es<sp/>un<sp/>software<sp/>libre,<sp/>siguiendo<sp/>las<sp/>normas<sp/>de<sp/>diseño<sp/>y<sp/>que<sp/>las<sp/>conexiones<sp/>fueran<sp/>simples<sp/>para<sp/>implementar,<sp/>en<sp/>la<sp/>imagenes<sp/>mostradas<sp/>a<sp/>continuacion<sp/>se<sp/>encuentra<sp/>a<sp/>detalle<sp/>la<sp/>construccion<sp/>de<sp/>estas<sp/>placas,<sp/>se<sp/>mandaron<sp/>a<sp/>realizar<sp/>en<sp/>china<sp/>debido<sp/>a<sp/>su<sp/>calidad<sp/>y<sp/>tiempo<sp/>de<sp/>entrega<sp/>en<sp/>un<sp/>lapso<sp/>de<sp/>1<sp/>semana<sp/>ya<sp/>se<sp/>contaba<sp/>con<sp/>el<sp/>circuito<sp/>impreso,<sp/>al<sp/>revisar<sp/>algunas<sp/>pistas<sp/>quedaron<sp/>demasiado<sp/>delgadas<sp/>por<sp/>lo<sp/>tanto<sp/>se<sp/>debe<sp/>tener<sp/>en<sp/>cuenta<sp/>estos<sp/>detalles<sp/>en<sp/>otros<sp/>proyectos,<sp/>de<sp/>igual<sp/>forma<sp/>los<sp/>leds<sp/>indicadores<sp/>quedaron<sp/>en<sp/>la<sp/>placa<sp/>pero<sp/>para<sp/>una<sp/>futura<sp/>version<sp/>seria<sp/>recomendable<sp/>dejarlos<sp/>externos<sp/>para<sp/>que<sp/>la<sp/>persona<sp/>que<sp/>interactue<sp/>sepa<sp/>como<sp/>esta<sp/>el<sp/>funcionamiento<sp/>del<sp/>robot<sp/>de<sp/>manera<sp/>visual.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">De<sp/>igual<sp/>forma<sp/>para<sp/>solda<sp/>el<sp/>microcontrolador<sp/>RP2040<sp/>se<sp/>necesito<sp/>de<sp/>soldadura<sp/>y<sp/>el<sp/>uso<sp/>de<sp/>microscopio<sp/>para<sp/>garantizar<sp/>que<sp/>no<sp/>quedara<sp/>en<sp/>corto,<sp/>tambien<sp/>se<sp/>reviso<sp/>el<sp/>puerto<sp/>USB<sp/>ya<sp/>que<sp/>eran<sp/>los<sp/>componentes<sp/>mas<sp/>criticos<sp/>a<sp/>revisar,<sp/>posteriormente<sp/>de<sp/>la<sp/>soldadura<sp/>al<sp/>realizar<sp/>pruebas<sp/>se<sp/>detecto<sp/>que<sp/>la<sp/>memoria<sp/>RAM<sp/>usado<sp/>no<sp/>era<sp/>la<sp/>requerida<sp/>por<sp/>la<sp/>RP240<sp/>por<sp/>lo<sp/>cual<sp/>se<sp/>tuvo<sp/>que<sp/>cambiar<sp/>para<sp/>que<sp/>funcionara<sp/>correctamente.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/PCB%20capa%201.JPG)</highlight></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/PCB%20capa%202.JPG)</highlight></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Capa%203.JPG)</highlight></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Capa%204.JPG)</highlight></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/PCB%20completa.PNG)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/documentacion/stylehtml/PCB.md"/>
+  </compounddef>
+</doxygen>

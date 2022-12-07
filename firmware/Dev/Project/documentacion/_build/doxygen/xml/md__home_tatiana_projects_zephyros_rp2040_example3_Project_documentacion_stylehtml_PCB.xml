@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="md__home_tatiana_projects_zephyros_rp2040_example3_Project_documentacion_stylehtml_PCB" kind="page">
+    <compoundname>md__home_tatiana_projects_zephyros_rp2040_example3_Project_documentacion_stylehtml_PCB</compoundname>
+    <title>PCB</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Se desarollo usando Kicad debido a que es un software libre, siguiendo las normas de diseño y que las conexiones fueran simples para implementar, en la imagenes mostradas a continuacion se encuentra a detalle la construccion de estas placas, se mandaron a realizar en china debido a su calidad y tiempo de entrega en un lapso de 1 semana ya se contaba con el circuito impreso, al revisar algunas pistas quedaron demasiado delgadas por lo tanto se debe tener en cuenta estos detalles en otros proyectos, de igual forma los leds indicadores quedaron en la placa pero para una futura version seria recomendable dejarlos externos para que la persona que interactue sepa como esta el funcionamiento del robot de manera visual.</para>
+<para>De igual forma para solda el microcontrolador RP2040 se necesito de soldadura y el uso de microscopio para garantizar que no quedara en corto, tambien se reviso el puerto USB ya que eran los componentes mas criticos a revisar, posteriormente de la soldadura al realizar pruebas se detecto que la memoria RAM usado no era la requerida por la RP240 por lo cual se tuvo que cambiar para que funcionara correctamente.</para>
+<para><image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/PCB%20capa%201.JPG" inline="yes"></image>
+ <image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/PCB%20capa%202.JPG" inline="yes"></image>
+ <image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/Capa%203.JPG" inline="yes"></image>
+ <image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/Capa%204.JPG" inline="yes"></image>
+ <image type="html" name="https://github.com/ltherreraro/Wally/blob/main/Imagenes/PCB%20completa.PNG" inline="yes"></image>
+ </para>
+    </detaileddescription>
+    <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/documentacion/stylehtml/PCB.md"/>
+  </compounddef>
+</doxygen>

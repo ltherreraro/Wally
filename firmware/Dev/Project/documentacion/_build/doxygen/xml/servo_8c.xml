@@ -1,0 +1,632 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="servo_8c" kind="file" language="C++">
+    <compoundname>servo.c</compoundname>
+    <includes local="no">zephyr/kernel.h</includes>
+    <includes local="no">zephyr/sys/printk.h</includes>
+    <includes local="no">zephyr/device.h</includes>
+    <includes local="no">zephyr/drivers/pwm.h</includes>
+    <includedby refid="main_8c" local="yes">/home/tatiana/projects/zephyros-rp2040-example3/Project/src/main.c</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>zephyr/device.h</label>
+      </node>
+      <node id="1">
+        <label>/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c</label>
+        <link refid="servo_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>zephyr/sys/printk.h</label>
+      </node>
+      <node id="2">
+        <label>zephyr/kernel.h</label>
+      </node>
+      <node id="5">
+        <label>zephyr/drivers/pwm.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/tatiana/projects/zephyros-rp2040-example3/Project/src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="1">
+        <label>/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c</label>
+        <link refid="servo_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="servo_8c_1af6cffce1346f5ea0772e84f63a1c418d" prot="public" static="no">
+        <name>objeto_servo</name>
+        <param><defname>x</defname></param>
+        <initializer>PWM_DT_SPEC_GET(DT_NODELABEL(servo##x));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="6" column="9" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="servo_8c_1a504a48856b2b1c8a48325df7088f49aa" prot="public" static="no">
+        <name>MINPULSE</name>
+        <initializer>PWM_USEC(700)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="15" column="9" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="servo_8c_1a7302231f8485e64ea42e2e726075b6ee" prot="public" static="no">
+        <name>MAXPULSE</name>
+        <initializer>PWM_USEC(2500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="16" column="9" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="servo_8c_1a0a6a6aa82dc3ec38066c14cd7241949e" prot="public" static="no">
+        <name>FGRADOS</name>
+        <param><defname>x</defname></param>
+        <initializer>PWM_USEC(x*10)+<ref refid="servo_8c_1a504a48856b2b1c8a48325df7088f49aa" kindref="member">MINPULSE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="18" column="9" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="servo_8c_1a70be2dc5c8bdc85b027ea6118753cca1" prot="public" static="no">
+        <name>STEP</name>
+        <initializer>PWM_USEC(100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="20" column="9" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098" prot="public" static="no" strong="no">
+        <type></type>
+        <name>direction</name>
+        <enumvalue id="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098ac2cd8d8289760e9d504f8e44fdf48e95" prot="public">
+          <name>RIGTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da" prot="public">
+          <name>DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098adb45120aafd37a973140edee24708065" prot="public">
+          <name>LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098aba595d8bca8bc5e67c37c0a9d89becfa" prot="public">
+          <name>UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="22" column="1" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="22" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="servo_8c_1a6190848140e47640071699b31523e32e" prot="public" static="no" mutable="no">
+        <type>const struct pwm_dt_spec</type>
+        <definition>const struct pwm_dt_spec servo0</definition>
+        <argsstring></argsstring>
+        <name>servo0</name>
+        <initializer>= PWM_DT_SPEC_GET(DT_NODELABEL(servo0 ))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="1" column="0" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="servo_8c_1a2febcf98052aa61b54400146eb4c8e51" prot="public" static="no" mutable="no">
+        <type>const struct pwm_dt_spec</type>
+        <definition>const struct pwm_dt_spec servo1</definition>
+        <argsstring></argsstring>
+        <name>servo1</name>
+        <initializer>= PWM_DT_SPEC_GET(DT_NODELABEL(servo1 ))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="1" column="0" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="servo_8c_1a3b34c30c23b6696f0d7910a01711f35a" prot="public" static="no" mutable="no">
+        <type>const struct pwm_dt_spec</type>
+        <definition>const struct pwm_dt_spec servo2</definition>
+        <argsstring></argsstring>
+        <name>servo2</name>
+        <initializer>= PWM_DT_SPEC_GET(DT_NODELABEL(servo2 ))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="1" column="0" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="servo_8c_1ae68870ce83db5ea2722d4ffdb5a3cde4" prot="public" static="no" mutable="no">
+        <type>const struct pwm_dt_spec</type>
+        <definition>const struct pwm_dt_spec servo3</definition>
+        <argsstring></argsstring>
+        <name>servo3</name>
+        <initializer>= PWM_DT_SPEC_GET(DT_NODELABEL(servo3 ))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="1" column="0" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="servo_8c_1ac858c2b7ac5d3806eef8287b1fe0f839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void calibracion</definition>
+        <argsstring>(int pulsador, int grados, struct pwm_dt_spec servo)</argsstring>
+        <name>calibracion</name>
+        <param>
+          <type>int</type>
+          <declname>pulsador</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>grados</declname>
+        </param>
+        <param>
+          <type>struct pwm_dt_spec</type>
+          <declname>servo</declname>
+        </param>
+        <briefdescription>
+<para>Sirve para calibrar el angulo de movimiento de cada servo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pulsador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in, Pulsador para parar en el momento que se requiera y dar por terminada la calibracion </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>grados</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in, indica los grados a mover </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>servo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in, se debe escoger el servo a calibrar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="36" column="6" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="36" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="servo_8c_1a0c6fa123afe4328571576d130fced1ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void min_max_pulse</definition>
+        <argsstring>(struct pwm_dt_spec servo, int *min_pulse, int *max_pulse)</argsstring>
+        <name>min_max_pulse</name>
+        <param>
+          <type>struct pwm_dt_spec</type>
+          <declname>servo</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>min_pulse</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>max_pulse</declname>
+        </param>
+        <briefdescription>
+<para>Entrega el puso maximo y minimo del servomotor escogidos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>servo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in, escoger servo0, servo1 o servo2 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_pulse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out, entrega pulso minimo del servo escogido </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_pulse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out, entrega pulso maximo del servo escogido </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="57" column="6" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="servo_8c_1afaca9148de068830224dd17615aa480b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void servo_tapa</definition>
+        <argsstring>(enum direction dir, struct pwm_dt_spec servo)</argsstring>
+        <name>servo_tapa</name>
+        <param>
+          <type>enum <ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098" kindref="member">direction</ref></type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>struct pwm_dt_spec</type>
+          <declname>servo</declname>
+        </param>
+        <briefdescription>
+<para>Controla los servos de la tapa, se debe escoger la direccion del movimiento. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in (enum), UP DOWN para servo lamina, LEFT RIGH para servo barra </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>servo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in escoger servo0, servo1, servo2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="71" column="6" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="71" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="servo_8c_1ac0e394261f0cff4b4f2d2a7e7ca492b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void movimiento</definition>
+        <argsstring>(int grados, struct pwm_dt_spec servo)</argsstring>
+        <name>movimiento</name>
+        <param>
+          <type>int</type>
+          <declname>grados</declname>
+        </param>
+        <param>
+          <type>struct pwm_dt_spec</type>
+          <declname>servo</declname>
+        </param>
+        <briefdescription>
+<para>Mueve el servo los grados que se indique. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>grados</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in, grados a mover </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>servo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in, servo a mover </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="112" column="6" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="112" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="servo_8c_1a8baf985d647d74b4572ffa17c6b27e38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void prueba_fun_camara</definition>
+        <argsstring>(int *stop)</argsstring>
+        <name>prueba_fun_camara</name>
+        <param>
+          <type>int *</type>
+          <declname>stop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="125" column="6" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="125" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="servo_8c_1a0a8c3cbdccb1be8986515dc41392ba00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void servo_camara</definition>
+        <argsstring>(struct pwm_dt_spec servo, int seg, int *grados)</argsstring>
+        <name>servo_camara</name>
+        <param>
+          <type>struct pwm_dt_spec</type>
+          <declname>servo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>seg</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>grados</declname>
+        </param>
+        <briefdescription>
+<para>Mueve el servo de la camara constantemente de 0 a 180 y de 180 a 0 hasta que la camara detecta un objeto. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>servo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in, escoger el servo </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in, escoger el tiempo de espera para aumentar los grados </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>grados</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out, indica a que grados encontro el objeto </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="137" column="6" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="137" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="servo_8c_1a534ab8eaf386e1d4304791b3712edd00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_servos</definition>
+        <argsstring>()</argsstring>
+        <name>init_servos</name>
+        <briefdescription>
+<para>Inicializacion de servos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" line="180" column="6" bodyfile="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c" bodystart="180" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;zephyr/kernel.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;zephyr/sys/printk.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;zephyr/device.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;zephyr/drivers/pwm.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>objeto_servo(x)<sp/>PWM_DT_SPEC_GET(DT_NODELABEL(servo##x));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">pwm_dt_spec<sp/><ref refid="servo_8c_1a6190848140e47640071699b31523e32e" kindref="member">servo0</ref><sp/>=<sp/><ref refid="servo_8c_1af6cffce1346f5ea0772e84f63a1c418d" kindref="member">objeto_servo</ref>(0);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">pwm_dt_spec<sp/><ref refid="servo_8c_1a2febcf98052aa61b54400146eb4c8e51" kindref="member">servo1</ref><sp/>=<sp/><ref refid="servo_8c_1af6cffce1346f5ea0772e84f63a1c418d" kindref="member">objeto_servo</ref>(1);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">pwm_dt_spec<sp/><ref refid="servo_8c_1a3b34c30c23b6696f0d7910a01711f35a" kindref="member">servo2</ref><sp/>=<sp/><ref refid="servo_8c_1af6cffce1346f5ea0772e84f63a1c418d" kindref="member">objeto_servo</ref>(2);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">pwm_dt_spec<sp/><ref refid="servo_8c_1ae68870ce83db5ea2722d4ffdb5a3cde4" kindref="member">servo3</ref><sp/>=<sp/><ref refid="servo_8c_1af6cffce1346f5ea0772e84f63a1c418d" kindref="member">objeto_servo</ref>(3);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//static<sp/>const<sp/>uint32_t<sp/>min_pulse<sp/>=<sp/>DT_PROP(DT_NODELABEL(servo0),<sp/>min_pulse);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//static<sp/>const<sp/>uint32_t<sp/>max_pulse<sp/>=<sp/>DT_PROP(DT_NODELABEL(servo0),<sp/>max_pulse);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MINPULSE<sp/>PWM_USEC(700)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXPULSE<sp/>PWM_USEC(2500)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FGRADOS(x)<sp/>PWM_USEC(x*10)+MINPULSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STEP<sp/>PWM_USEC(100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098" kindref="member">direction</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098ac2cd8d8289760e9d504f8e44fdf48e95" kindref="member">RIGTH</ref>,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da" kindref="member">DOWN</ref>,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098adb45120aafd37a973140edee24708065" kindref="member">LEFT</ref>,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098aba595d8bca8bc5e67c37c0a9d89becfa" kindref="member">UP</ref>,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1ac858c2b7ac5d3806eef8287b1fe0f839" kindref="member">calibracion</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pulsador,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>grados,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>pwm_dt_spec<sp/>servo){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printk(</highlight><highlight class="stringliteral">&quot;entro<sp/>en<sp/>claibra&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>pwm_set_pulse_dt(&amp;servo,<sp/><ref refid="servo_8c_1a0a6a6aa82dc3ec38066c14cd7241949e" kindref="member">FGRADOS</ref>(grados));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printk(</highlight><highlight class="stringliteral">&quot;Error<sp/>%d:<sp/>failed<sp/>to<sp/>set<sp/>pulse<sp/>width\n&quot;</highlight><highlight class="normal">,<sp/>ret);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1a0c6fa123afe4328571576d130fced1ab" kindref="member">min_max_pulse</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>pwm_dt_spec<sp/>servo,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>min_pulse,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>max_pulse){</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*min_pulse<sp/>=<sp/>PWM_USEC(700);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*max_pulse<sp/>=<sp/>PWM_USEC(2500);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1afaca9148de068830224dd17615aa480b" kindref="member">servo_tapa</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098" kindref="member">direction</ref><sp/>dir,</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>pwm_dt_spec<sp/>servo){</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret=-1;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minpulse,<sp/>maxpulse;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="servo_8c_1a0c6fa123afe4328571576d130fced1ab" kindref="member">min_max_pulse</ref>(servo,<sp/>&amp;minpulse,<sp/>&amp;maxpulse);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(dir)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098adb45120aafd37a973140edee24708065" kindref="member">LEFT</ref>:</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>pwm_set_pulse_dt(&amp;servo,<sp/>minpulse);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098ac2cd8d8289760e9d504f8e44fdf48e95" kindref="member">RIGTH</ref>:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>pwm_set_pulse_dt(&amp;servo,<sp/>maxpulse);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da" kindref="member">DOWN</ref>:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>pwm_set_pulse_dt(&amp;servo,<sp/>minpulse);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098aba595d8bca8bc5e67c37c0a9d89becfa" kindref="member">UP</ref>:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>pwm_set_pulse_dt(&amp;servo,<sp/>maxpulse);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printk(</highlight><highlight class="stringliteral">&quot;Error:<sp/>direction<sp/>invalid&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printk(</highlight><highlight class="stringliteral">&quot;Error<sp/>%d:<sp/>failed<sp/>to<sp/>set<sp/>pulse<sp/>width\n&quot;</highlight><highlight class="normal">,<sp/>ret);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1ac0e394261f0cff4b4f2d2a7e7ca492b9" kindref="member">movimiento</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>grados,</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>pwm_dt_spec<sp/>servo){</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>pwm_set_pulse_dt(&amp;servo,<sp/><ref refid="servo_8c_1a0a6a6aa82dc3ec38066c14cd7241949e" kindref="member">FGRADOS</ref>(grados));</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printk(</highlight><highlight class="stringliteral">&quot;Error<sp/>%d:<sp/>failed<sp/>to<sp/>set<sp/>pulse<sp/>width\n&quot;</highlight><highlight class="normal">,<sp/>ret);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1a8baf985d647d74b4572ffa17c6b27e38" kindref="member">prueba_fun_camara</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>stop){</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*stop<sp/>=<sp/>*stop<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1a0a8c3cbdccb1be8986515dc41392ba00" kindref="member">servo_camara</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>pwm_dt_spec<sp/>servo,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seg,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>grados){</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stop;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098" kindref="member">direction</ref><sp/>dire<sp/>=<sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098aba595d8bca8bc5e67c37c0a9d89becfa" kindref="member">UP</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="servo_8c_1a8baf985d647d74b4572ffa17c6b27e38" kindref="member">prueba_fun_camara</ref>(&amp;stop);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="servo_8c_1ac0e394261f0cff4b4f2d2a7e7ca492b9" kindref="member">movimiento</ref><sp/>(*grados,servo);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printk(</highlight><highlight class="stringliteral">&quot;grados<sp/><sp/>%d<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>*grados);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dire<sp/>==<sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da" kindref="member">DOWN</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*grados<sp/>&lt;=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dire<sp/>=<sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098aba595d8bca8bc5e67c37c0a9d89becfa" kindref="member">UP</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*grados=0;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*grados<sp/>=<sp/>*grados-10;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*grados<sp/>=<sp/>*grados<sp/>+<sp/>10;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*grados<sp/>&gt;=<sp/>150)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dire<sp/>=<sp/><ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da" kindref="member">DOWN</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*grados=150;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k_sleep(K_SECONDS(seg));<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(stop<sp/>&lt;=<sp/>20);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="servo_8c_1a534ab8eaf386e1d4304791b3712edd00" kindref="member">init_servos</ref>(){</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="servo_8c_1afaca9148de068830224dd17615aa480b" kindref="member">servo_tapa</ref>(<ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098adb45120aafd37a973140edee24708065" kindref="member">LEFT</ref>,<ref refid="servo_8c_1a6190848140e47640071699b31523e32e" kindref="member">servo0</ref>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="servo_8c_1afaca9148de068830224dd17615aa480b" kindref="member">servo_tapa</ref>(<ref refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da" kindref="member">DOWN</ref>,<ref refid="servo_8c_1a2febcf98052aa61b54400146eb4c8e51" kindref="member">servo1</ref>);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/src/servo.c"/>
+  </compounddef>
+</doxygen>

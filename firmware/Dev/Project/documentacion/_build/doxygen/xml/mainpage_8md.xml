@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="mainpage_8md" kind="file" language="Markdown">
+    <compoundname>mainpage.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Introducciòn</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Es<sp/>un<sp/>projecto<sp/>embebido<sp/>para<sp/>recolectar<sp/>basura</highlight></codeline>
+<codeline><highlight class="normal">cuyo<sp/>objetivo<sp/>es<sp/>detectar<sp/>desechos<sp/>a<sp/>traves<sp/>de<sp/>una<sp/>camara<sp/>controlada<sp/>por</highlight></codeline>
+<codeline><highlight class="normal">el<sp/>modulo<sp/>esp32cam<sp/>y<sp/>el<sp/>control<sp/>de<sp/>movimientos<sp/>junto<sp/>con<sp/>los<sp/>sensores<sp/>son<sp/></highlight></codeline>
+<codeline><highlight class="normal">controlados<sp/>por<sp/>la<sp/>RP2040,<sp/>el<sp/>firmare<sp/>se<sp/>basa<sp/>se<sp/>zephyr<sp/>OS</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Es<sp/>un<sp/>dispositivo<sp/>robótico<sp/>con<sp/>capacidad<sp/>de<sp/>navegación<sp/>por<sp/>espacios<sp/>abiertos<sp/>y<sp/>cerrados,<sp/>reconocimiento<sp/>y<sp/>transmisión<sp/>de<sp/>imagen<sp/>y<sp/>video,<sp/>con<sp/>la<sp/>finalidad<sp/>de<sp/>ver<sp/>e<sp/>identificar<sp/>objetos<sp/>del<sp/>entorno<sp/>y<sp/>disponer<sp/>de<sp/>ellos<sp/>(levantarlos,<sp/>recogerlos<sp/>y<sp/>llevarlos<sp/>a<sp/>un<sp/>sitio<sp/>específico).<sp/>Inicialmente<sp/>pensado<sp/>para<sp/>labores<sp/>de<sp/>aseo,<sp/>puede<sp/>ser<sp/>fácilmente<sp/>utilizado<sp/>en<sp/>otros<sp/>entornos<sp/>que<sp/>por<sp/>sus<sp/>condiciones<sp/>representen<sp/>un<sp/>riesgo<sp/>para<sp/>la<sp/>vida<sp/>humana<sp/>y<sp/>animal<sp/>(recintos<sp/>con<sp/>riesgos<sp/>biológicos,<sp/>edificios<sp/>al<sp/>borde<sp/>del<sp/>colapso,<sp/>entre<sp/>otros),<sp/>que<sp/>se<sp/>puede<sp/>validar<sp/>a<sp/>través<sp/>de<sp/>una<sp/>aplicación</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Boards<sp/>Soportadas</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Esta<sp/>soportado<sp/>para<sp/>la<sp/>ESP32CAM<sp/>y<sp/>la<sp/>RP2040,<sp/>debido<sp/>a<sp/>la<sp/>versatilidad<sp/>de<sp/></highlight></codeline>
+<codeline><highlight class="normal">Zephyr<sp/>Os<sp/>facilmente<sp/>puede<sp/>ser<sp/>llevado<sp/>a<sp/>otras<sp/>arquitecturas<sp/>solo<sp/>se<sp/>requeriria</highlight></codeline>
+<codeline><highlight class="normal">definir<sp/>los<sp/>puertos<sp/>de<sp/>la<sp/>nueva<sp/>tarjeta<sp/>a<sp/>utiliar.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Alcance</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Durante<sp/>la<sp/>primera<sp/>iteración,<sp/>estamos<sp/>trabajando<sp/>para<sp/>que<sp/>Wally<sp/>pueda<sp/>recorrer<sp/>un<sp/>espacio<sp/>cerrado<sp/>relativamente<sp/>pequeño<sp/>(por<sp/>ejemplo,<sp/>un<sp/>salón)<sp/>evitando<sp/>obstáculos<sp/>y<sp/>la<sp/>identificación<sp/>de<sp/>objetos<sp/>a<sp/>través<sp/>de<sp/>la<sp/>cámara<sp/>de<sp/>manera<sp/>limitada.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Sistema<sp/>embebido</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Es<sp/>un<sp/>sistema<sp/>entregal<sp/>al<sp/>que<sp/>se<sp/>le<sp/>diseño<sp/>la<sp/>tarjeta,<sp/>el<sp/>modelo<sp/>3D<sp/>y<sp/>el<sp/>firmware,</highlight></codeline>
+<codeline><highlight class="normal">para<sp/>efectos<sp/>de<sp/>prueba<sp/>y<sp/>debido<sp/>al<sp/>presupuesto<sp/>el<sp/>modelo<sp/>3D<sp/>se<sp/>fabrico<sp/>en<sp/>carton.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Materiales</highlight></codeline>
+<codeline><highlight class="normal">Cada<sp/>uno<sp/>de<sp/>los<sp/>elementos<sp/>utilizados<sp/>en<sp/>el<sp/>hardware<sp/>del<sp/>proyecto<sp/>Wally<sp/>esta<sp/>aquí<sp/>y<sp/>sus<sp/>respectivas<sp/>hojas<sp/>de<sp/>datos.<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>[ESP32](https://github.com/ltherreraro/Wally/blob/main/Datasheet/esp32-sl_specification.pdf)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[ESP32CAM](https://github.com/ltherreraro/Wally/blob/main/Datasheet/ESP32-CAM%20Product%20Specification.pdf)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Nodemcu](https://www.make-it.ca/nodemcu-details-specifications/)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[ESP8266](https://github.com/ltherreraro/Wally/blob/main/Datasheet/0a-esp8266ex_datasheet_en.pdf)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Servo<sp/>MG90](https://github.com/ltherreraro/Wally/blob/main/Datasheet/MG90S_Tower-Pro%20(1).pdf)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Servo<sp/>SG90](https://github.com/ltherreraro/Wally/blob/main/Datasheet/sg90_datasheet%20(1).pdf)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Motor](https://ferretronica.com/products/motorreductor-500-gr-cm-1000-rpm-6v?variant=12391693877341&amp;currency=COP&amp;utm_medium=product_sync&amp;utm_source=google&amp;utm_content=sag_organic&amp;utm_campaign=sag_organic&amp;utm_campaign=gs-2021-10-19&amp;utm_source=google&amp;utm_medium=smart_campaign&amp;gclid=Cj0KCQjwjbyYBhCdARIsAArC6LKaKwvKPRHye8ZWSAgEkHbSm4rjs0Gm-KYxnCncWKSN3TIoLXUkZbEaAqU5EALw_wcB)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Ultrasonido](https://github.com/ltherreraro/Wally/blob/main/Datasheet/HCSR04%20(1).pdf)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Puente<sp/>H](https://github.com/ltherreraro/Wally/blob/main/Datasheet/datasheet-l9110%20(1).pdf)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Regulador](https://github.com/ltherreraro/Wally/blob/main/Datasheet/2001081204_Shikues-AMS1117-1-2_C475600.pdf)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[RP2040<sp/>pico](https://github.com/ltherreraro/Wally/blob/main/Datasheet/rp2040-datasheet.pdf)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Digrama<sp/>de<sp/>caja<sp/>negra</highlight></codeline>
+<codeline><highlight class="normal">El<sp/>módulo<sp/>ESP32-CAM<sp/><sp/>será<sp/>el<sp/>modulo<sp/>principal<sp/>tiene<sp/>algunas<sp/>características<sp/>técnicas<sp/>como<sp/>son:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Conectividad:<sp/>WiFi<sp/>802.11b/g/n<sp/>+<sp/>Bluetooth<sp/>4.2<sp/>con<sp/>BLE.<sp/>Soporta<sp/>carga<sp/>de<sp/>imagen<sp/>por<sp/>Wifi.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Conexiones:<sp/>UART,<sp/>SPI,<sp/>I2C,<sp/>y<sp/>PWM.<sp/>Tiene<sp/>9<sp/>pines<sp/>GPIO.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Frecuencia<sp/>de<sp/>reloj:<sp/>hasta<sp/>160Mhz.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Potencia<sp/>de<sp/>cómputo<sp/>del<sp/>microcontrolador:<sp/>hasta<sp/>600<sp/>DMIPS.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Memoria:<sp/>520KB<sp/>de<sp/>SRAM<sp/>+<sp/><sp/>4MB<sp/>de<sp/>PSRAM<sp/>+<sp/>SD<sp/>slot<sp/>para<sp/>tarjetas</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Extras:<sp/>tiene<sp/>múltiples<sp/>modos<sp/>de<sp/>reposo,<sp/>firmware<sp/>actualizable<sp/>por<sp/>OTA,<sp/>y<sp/>LED<sp/>para<sp/>uso<sp/>de<sp/>memoria<sp/>flash<sp/>built-in.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Cámara:<sp/>soporta<sp/>cámaras<sp/>OV2640<sp/>que<sp/>pueden<sp/>venir<sp/>en<sp/>el<sp/>pack<sp/>o<sp/>comprarse<sp/>independientemente.<sp/>Este<sp/>tipo<sp/>de<sp/>cámaras<sp/>tienen:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>2<sp/>MP<sp/>en<sp/>su<sp/>sensor</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Tamaño<sp/>de<sp/>arreglo<sp/>UXGA<sp/>de<sp/>1622×1200<sp/>px</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Formato<sp/>de<sp/>salida<sp/>YUV422,<sp/>YUV420,<sp/>RGB565,<sp/>RGB555<sp/>y<sp/>compresión<sp/>de<sp/>datos<sp/>de<sp/>8-bit.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Puede<sp/>transferir<sp/>imagen<sp/>entre<sp/>15<sp/>y<sp/>60<sp/>FPS.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Adicionalmente<sp/>se<sp/>usara<sp/>un<sp/>modulo<sp/>secundario<sp/>ESP8266<sp/>para<sp/>el<sp/>control<sp/>de<sp/>los<sp/>motores<sp/>y<sp/>**modulo<sp/>ultrasonido**,<sp/>el<sp/>sistema<sp/>en<sp/>general<sp/>tiene<sp/>diferentes<sp/>módulos<sp/>como:</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Modulo<sp/>de<sp/>alimentación:<sp/>Consta<sp/>de<sp/>la<sp/>batería<sp/>y<sp/>el<sp/>sistema<sp/>de<sp/>regulación</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Modulo<sp/>de<sp/>movimiento:<sp/>Inicialmente<sp/>se<sp/>plantea<sp/>que<sp/>se<sp/>requiere<sp/>un<sp/>puente<sp/>H<sp/>de<sp/>dos<sp/>canales<sp/>y<sp/>dos<sp/>motores.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Modulo<sp/>de<sp/>movimiento<sp/>detección:<sp/>Consta<sp/>de<sp/>un<sp/>servomotor<sp/>de<sp/>360<sp/>grados<sp/>para<sp/>rotar<sp/>la<sp/>cámara<sp/>360</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Modulo<sp/>de<sp/>movimiento<sp/>recolección:<sp/>Inicialmente<sp/>se<sp/>plantea<sp/>como<sp/>dos<sp/>servomotores</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Modulo<sp/>de<sp/>detección:<sp/>Consta<sp/>de<sp/>una<sp/>cámara<sp/>para<sp/>reconocer<sp/>basura<sp/>y<sp/>ultrasonido<sp/>para<sp/>detectar<sp/>obstáculos<sp/>también<sp/>la<sp/>cercanía<sp/>de<sp/>los<sp/>objetos</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Modulo<sp/>de<sp/>Indicadores<sp/>y<sp/>botones:<sp/>Consta<sp/>de<sp/>leds<sp/>para<sp/>notificar<sp/>al<sp/>usuario<sp/>conexión<sp/>con<sp/>el<sp/>servidor,<sp/>encendido,<sp/>falla<sp/>y<sp/>botones<sp/>de<sp/>encendido<sp/>también<sp/>de<sp/>reset.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Modulo<sp/>SD:<sp/>Que<sp/>se<sp/>encargara<sp/>de<sp/>guardar<sp/>las<sp/>imágenes<sp/>para<sp/>ser<sp/>enviadas<sp/>en<sp/>caso<sp/>de<sp/>perdida<sp/>de<sp/>conexión.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>continuación<sp/>se<sp/>muestra<sp/>un<sp/>diagrama<sp/>general</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Diagrama%20RP2040%20embebidos-Page-1.jpg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/diag2.PNG)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Requerimientos<sp/>Funcionales</highlight></codeline>
+<codeline><highlight class="normal">Recepción<sp/>y<sp/>transmisión<sp/>de<sp/>imágenes,<sp/>streaming<sp/>video,<sp/>detección<sp/>de<sp/>imágenes<sp/>vía<sp/>imagen<sp/>y<sp/>sensor<sp/>ultrasonido,<sp/>capacidad<sp/>de<sp/>navegación,<sp/>recolección<sp/>del<sp/>objeto,<sp/>conectividad<sp/>inalámbrica<sp/>(Wi-Fi,<sp/>Bluetooth).</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>Requerimientos<sp/>no<sp/>funcionales</highlight></codeline>
+<codeline><highlight class="normal">Estabilidad,<sp/>fiabilidad,<sp/>precisión<sp/>el<sp/>el<sp/>reconocimiento<sp/>y<sp/>recolección<sp/>de<sp/>objeto,<sp/>facilidad<sp/>de<sp/>uso.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Equipo<sp/>|<sp/>Corriente<sp/>(in)|<sp/>Voltaje<sp/>(in)<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>-------------<sp/>|<sp/>-------------<sp/>|------------<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>ESP32CAM<sp/>|<sp/>500mA<sp/><sp/>|<sp/><sp/>3.3V<sp/>-5V<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>NODEMCU<sp/><sp/>|<sp/>300mA<sp/><sp/>|<sp/><sp/>3,3V<sp/>-<sp/>5V<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>SERVOR<sp/><sp/>|<sp/>400mA<sp/><sp/>|<sp/><sp/><sp/>5V<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>MOTOR<sp/><sp/>|<sp/>400mA<sp/><sp/>|<sp/>6V-9V<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>ULTRASONIO<sp/><sp/>|<sp/>15mA<sp/><sp/>|<sp/><sp/>5V<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>L9110(PUENTE<sp/>H)<sp/><sp/>|<sp/>0.5mA<sp/><sp/>|<sp/>2.5V-12V<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/documentacion/stylehtml/mainpage.md"/>
+  </compounddef>
+</doxygen>

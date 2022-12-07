@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="3D_8md" kind="file" language="Markdown">
+    <compoundname>3D.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Diseño<sp/>3D</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Para<sp/>el<sp/>diseño<sp/>de<sp/>la<sp/>estructura<sp/>se<sp/>realizó<sp/>en<sp/>el<sp/>programa<sp/>FreeCAD<sp/>de<sp/>software<sp/>libre,<sp/>cada<sp/>pieza<sp/>se<sp/>tomó<sp/>por<sp/>separado<sp/>para<sp/>ensamblar<sp/>después<sp/>de<sp/>la<sp/>impresión,<sp/>esta<sp/>es<sp/>la<sp/>mejor<sp/>forma<sp/>de<sp/>presentar<sp/>el<sp/>carro<sp/>ya<sp/>que<sp/>cuenta<sp/>con<sp/>un<sp/>diseño<sp/>optimo<sp/>para<sp/>las<sp/>labores<sp/>que<sp/>tiene<sp/>presupuestado<sp/>hacer<sp/>y<sp/>su<sp/>peso<sp/>ligero,<sp/>sin<sp/>embargo<sp/>al<sp/>realizar<sp/>las<sp/>cotizacion<sp/>en<sp/>la<sp/>empresa<sp/>arrow<sp/>(Bogota,<sp/>Colombia)<sp/>para<sp/>imprimir<sp/>su<sp/>costo<sp/>aproximado<sp/>es<sp/>de<sp/>600.000<sp/>pesos<sp/>y<sp/>debido<sp/>a<sp/>los<sp/>recursos<sp/>limitados<sp/>se<sp/>obto<sp/>por<sp/>dejar<sp/>el<sp/>modelo<sp/>de<sp/>impresion<sp/>para<sp/>un<sp/>futuro<sp/>y<sp/>para<sp/>realizar<sp/>el<sp/>prototipo<sp/>se<sp/>realizo<sp/>con<sp/>carton.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Pieza<sp/>principal</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">La<sp/>pieza<sp/>principal<sp/><sp/>va<sp/>sujeto<sp/>las<sp/>ruegas<sp/>y<sp/>las<sp/>piezas<sp/>que<sp/>recolectar<sp/>los<sp/>desechos,<sp/>se<sp/>hizo<sp/>con<sp/>orificios<sp/>para<sp/>encagar<sp/>las<sp/>piezas<sp/>para<sp/>evitar<sp/>el<sp/>uso<sp/>de<sp/>tornillos<sp/>y<sp/>garantizar<sp/>la<sp/>fijacion<sp/>de<sp/>las<sp/>piezas.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Pieza%20principal.JPG)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Piezas<sp/>secundarias<sp/>y<sp/>complementarias</highlight></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Deslizar.JPG)</highlight></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Recogedor.JPG)</highlight></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Soporte%20de%20rueda.JPG)</highlight></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Soporte%20servo.JPG)</highlight></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Recogedor.JPG)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Prototipo</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Para<sp/>el<sp/>prototipo<sp/>como<sp/>se<sp/>indicio<sp/>se<sp/>diseño<sp/>un<sp/>sistema<sp/>a<sp/>base<sp/>de<sp/>cartón<sp/><sp/>que<sp/>se<sp/>puede<sp/>ver<sp/>a<sp/>continuacion.</highlight></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Prototipo1-PhotoRoom%20(1).png)</highlight></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Prototipo2-PhotoRoom.png)</highlight></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Imagenes/Prototipo3-PhotoRoom.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Brochure</highlight></codeline>
+<codeline><highlight class="normal">![](https://github.com/ltherreraro/Wally/blob/main/Brochure%20Wally_page-0001%20(1).jpg)</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/home/tatiana/projects/zephyros-rp2040-example3/Project/documentacion/stylehtml/3D.md"/>
+  </compounddef>
+</doxygen>

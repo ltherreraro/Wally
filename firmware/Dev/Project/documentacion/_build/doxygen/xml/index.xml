@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="3D_8md" kind="file"><name>3D.md</name>
+  </compound>
+  <compound refid="mainpage_8md" kind="file"><name>mainpage.md</name>
+  </compound>
+  <compound refid="PCB_8md" kind="file"><name>PCB.md</name>
+  </compound>
+  <compound refid="main_8c" kind="file"><name>main.c</name>
+    <member refid="main_8c_1aa1fc04bb4c614ea829be2eb2241f7306" kind="function"><name>demo_servos</name></member>
+    <member refid="main_8c_1a6288eba0f8e8ad3ab1544ad731eb7667" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="motores_8c" kind="file"><name>motores.c</name>
+    <member refid="motores_8c_1a840217aee9bd887463dad1b56defb051" kind="define"><name>SLEEP_TIME_MS</name></member>
+    <member refid="motores_8c_1ac8b7bbb65d5065e43a35775d9fc3e322" kind="define"><name>LED1_NODE</name></member>
+    <member refid="motores_8c_1a9014b2cb02041c926b50b6411232ee82" kind="define"><name>LED2_NODE</name></member>
+    <member refid="motores_8c_1ad5246f73682d98292ef7d7b038582700" kind="define"><name>LED3_NODE</name></member>
+    <member refid="motores_8c_1ae4c8a732da78bf809363947e4aff8ea5" kind="define"><name>LED4_NODE</name></member>
+    <member refid="motores_8c_1a1072a9ac260062fda01ac121ee9be69d" kind="define"><name>LED5_NODE</name></member>
+    <member refid="motores_8c_1adf201988e662bf65fb8d29acebb0e234" kind="define"><name>LED6_NODE</name></member>
+    <member refid="motores_8c_1a57c8b286388ac7ce383f55794c254d3d" kind="define"><name>PINC1A</name></member>
+    <member refid="motores_8c_1a3418b15c22dd3bbd33296910b1747179" kind="define"><name>PINC2A</name></member>
+    <member refid="motores_8c_1ad941e9f14c2399ac338174d601903bd7" kind="define"><name>PINC1B</name></member>
+    <member refid="motores_8c_1a0457b73874b842cd6030dce2cd445b4f" kind="define"><name>PINC2B</name></member>
+    <member refid="motores_8c_1a1d7a8deb5390efc45ab3211240b4b3c2" kind="define"><name>PINEA</name></member>
+    <member refid="motores_8c_1ad76384ba4c6638f8d12af802d9963471" kind="define"><name>PINEB</name></member>
+    <member refid="motores_8c_1aa39dd964e10446f47e3b5c27a6471ef0" kind="define"><name>MIN_PERIOD</name></member>
+    <member refid="motores_8c_1a0275127f3ded01ac8b7a9b4714889696" kind="define"><name>MAX_PERIOD</name></member>
+    <member refid="motores_8c_1ae97ba2c2c546236143006a7e5008a7df" kind="define"><name>TGIROCOM</name></member>
+    <member refid="motores_8c_1a6f86db1091f65f1da8d62a5c9e93b1c8" kind="define"><name>PGRADOS</name></member>
+    <member refid="motores_8c_1aedd819163622ef76259878ac5abd1c51" kind="define"><name>PCENTI</name></member>
+    <member refid="motores_8c_1a7ef22ed321cbbc1bde5b4f1edff781a4" kind="enum"><name>direction_mot</name></member>
+    <member refid="motores_8c_1a7ef22ed321cbbc1bde5b4f1edff781a4ae1fe6735cb3b17a5eca16f23fd061d4f" kind="enumvalue"><name>RIGTHG</name></member>
+    <member refid="motores_8c_1a7ef22ed321cbbc1bde5b4f1edff781a4a7e34b7ae523ac22114cdb965ee8db601" kind="enumvalue"><name>FWD</name></member>
+    <member refid="motores_8c_1a7ef22ed321cbbc1bde5b4f1edff781a4a1648d54488b09e51667adb8c5c86ca21" kind="enumvalue"><name>LEFTG</name></member>
+    <member refid="motores_8c_1a7ef22ed321cbbc1bde5b4f1edff781a4aaf81f4b887ef89cf36d971924c44123c" kind="enumvalue"><name>RWD</name></member>
+    <member refid="motores_8c_1aaa74c6f43aee11387f4087fa00526d85" kind="enum"><name>motor</name></member>
+    <member refid="motores_8c_1aaa74c6f43aee11387f4087fa00526d85a11b5767ab71d9f00ef3c6e973669467e" kind="enumvalue"><name>MOTA</name></member>
+    <member refid="motores_8c_1aaa74c6f43aee11387f4087fa00526d85a19489d5b5dfaf289aa4b77c68fcb5aa7" kind="enumvalue"><name>MOTB</name></member>
+    <member refid="motores_8c_1a5750165a47623772b060f19e50edb5fc" kind="variable"><name>ctr1A</name></member>
+    <member refid="motores_8c_1ae53aa59e1ed3111188f451a27e6ee3eb" kind="variable"><name>ctr2A</name></member>
+    <member refid="motores_8c_1a1c2a53882b1c1ed4f5f65c89e34c58d7" kind="variable"><name>ctr1B</name></member>
+    <member refid="motores_8c_1a3822d0e3bd411d894a583dfc7b808070" kind="variable"><name>ctr2B</name></member>
+    <member refid="motores_8c_1a6fea0fec6c5d7bd7527a2581de2e0622" kind="variable"><name>pwm_led0</name></member>
+    <member refid="motores_8c_1a86a212641c93e8d25bd28a301befaa4c" kind="variable"><name>pwm_led1</name></member>
+    <member refid="motores_8c_1a1d9597ee61ca974fc8e1897ba0b42ab5" kind="function"><name>inicio_motores</name></member>
+    <member refid="motores_8c_1a7fbf084357e21370f6dfdc008b93e2b9" kind="function"><name>giro</name></member>
+    <member refid="motores_8c_1a15bf1848c8e595001b0fc636c5178100" kind="function"><name>paradatotal</name></member>
+    <member refid="motores_8c_1a169b1c091164234572488cd8e797756d" kind="function"><name>distancia</name></member>
+    <member refid="motores_8c_1a293591a811652ef2bd74c08e79680985" kind="function"><name>velocidad</name></member>
+    <member refid="motores_8c_1a534441fb4412167e0692d405fcfcce2f" kind="function"><name>calibracio_mot</name></member>
+  </compound>
+  <compound refid="servo_8c" kind="file"><name>servo.c</name>
+    <member refid="servo_8c_1af6cffce1346f5ea0772e84f63a1c418d" kind="define"><name>objeto_servo</name></member>
+    <member refid="servo_8c_1a504a48856b2b1c8a48325df7088f49aa" kind="define"><name>MINPULSE</name></member>
+    <member refid="servo_8c_1a7302231f8485e64ea42e2e726075b6ee" kind="define"><name>MAXPULSE</name></member>
+    <member refid="servo_8c_1a0a6a6aa82dc3ec38066c14cd7241949e" kind="define"><name>FGRADOS</name></member>
+    <member refid="servo_8c_1a70be2dc5c8bdc85b027ea6118753cca1" kind="define"><name>STEP</name></member>
+    <member refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098" kind="enum"><name>direction</name></member>
+    <member refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098ac2cd8d8289760e9d504f8e44fdf48e95" kind="enumvalue"><name>RIGTH</name></member>
+    <member refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da" kind="enumvalue"><name>DOWN</name></member>
+    <member refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098adb45120aafd37a973140edee24708065" kind="enumvalue"><name>LEFT</name></member>
+    <member refid="servo_8c_1a99f26e6ee9fcd62f75203b5402df8098aba595d8bca8bc5e67c37c0a9d89becfa" kind="enumvalue"><name>UP</name></member>
+    <member refid="servo_8c_1a6190848140e47640071699b31523e32e" kind="variable"><name>servo0</name></member>
+    <member refid="servo_8c_1a2febcf98052aa61b54400146eb4c8e51" kind="variable"><name>servo1</name></member>
+    <member refid="servo_8c_1a3b34c30c23b6696f0d7910a01711f35a" kind="variable"><name>servo2</name></member>
+    <member refid="servo_8c_1ae68870ce83db5ea2722d4ffdb5a3cde4" kind="variable"><name>servo3</name></member>
+    <member refid="servo_8c_1ac858c2b7ac5d3806eef8287b1fe0f839" kind="function"><name>calibracion</name></member>
+    <member refid="servo_8c_1a0c6fa123afe4328571576d130fced1ab" kind="function"><name>min_max_pulse</name></member>
+    <member refid="servo_8c_1afaca9148de068830224dd17615aa480b" kind="function"><name>servo_tapa</name></member>
+    <member refid="servo_8c_1ac0e394261f0cff4b4f2d2a7e7ca492b9" kind="function"><name>movimiento</name></member>
+    <member refid="servo_8c_1a8baf985d647d74b4572ffa17c6b27e38" kind="function"><name>prueba_fun_camara</name></member>
+    <member refid="servo_8c_1a0a8c3cbdccb1be8986515dc41392ba00" kind="function"><name>servo_camara</name></member>
+    <member refid="servo_8c_1a534ab8eaf386e1d4304791b3712edd00" kind="function"><name>init_servos</name></member>
+  </compound>
+  <compound refid="ultrasonido_8c" kind="file"><name>ultrasonido.c</name>
+    <member refid="ultrasonido_8c_1af096b3b0209b19c7b402d60c351e81ce" kind="variable"><name>Echo1</name></member>
+    <member refid="ultrasonido_8c_1a4b02c4b5b4777a171d4666275c21db7e" kind="variable"><name>Trig1</name></member>
+    <member refid="ultrasonido_8c_1a4274755b4842d64347f0458d3299669a" kind="variable"><name>Echo2</name></member>
+    <member refid="ultrasonido_8c_1a5e9c9fe4b0298d815443c5c7c709b412" kind="variable"><name>Trig2</name></member>
+    <member refid="ultrasonido_8c_1afbe237a5e50f4a3db3102d2feae8f39a" kind="variable"><name>Echo3</name></member>
+    <member refid="ultrasonido_8c_1a9191f02be3cbe5d9dc90e48db2b0af4f" kind="variable"><name>Trig3</name></member>
+    <member refid="ultrasonido_8c_1a6b24be1257d13ce5685c65269351d968" kind="variable"><name>Echo4</name></member>
+    <member refid="ultrasonido_8c_1ad77433e1bfbd0b5b6e59d8faa097aed5" kind="variable"><name>Trig4</name></member>
+    <member refid="ultrasonido_8c_1a09e7078913cdcb091584dea4cbde5dd0" kind="variable"><name>ConfGpio5</name></member>
+    <member refid="ultrasonido_8c_1a442ca60a034bfc7216b4ef5fff2f2389" kind="variable"><name>ConfGpio6</name></member>
+    <member refid="ultrasonido_8c_1a610b706b58431ca77622114269dff919" kind="variable"><name>ConfGpio7</name></member>
+    <member refid="ultrasonido_8c_1a1097e7ff04843d4018a56b6ff3f7b986" kind="variable"><name>ConfGpio8</name></member>
+    <member refid="ultrasonido_8c_1a376bd6c8b6364ca0e68ad89bd806dbda" kind="variable"><name>ConfGpio9</name></member>
+    <member refid="ultrasonido_8c_1a19dda441c26352f3f426798ef3ab20bc" kind="variable"><name>ConfGpio10</name></member>
+    <member refid="ultrasonido_8c_1ad9b4cda77482a8a7aefa02ad4069556a" kind="variable"><name>ConfGpio18</name></member>
+    <member refid="ultrasonido_8c_1ac989eff935ae7e52792a81379b8b8884" kind="variable"><name>ConfGpio26</name></member>
+    <member refid="ultrasonido_8c_1a14d6e70b30469b8c9ecfa0ca6aba1e77" kind="variable"><name>trig1signal</name></member>
+    <member refid="ultrasonido_8c_1ac97e06d1c476ad3fb337554445f1b6ab" kind="function"><name>getDistance</name></member>
+    <member refid="ultrasonido_8c_1a4a56603dba9f03c25689d17cdb186fe7" kind="function"><name>uscounter</name></member>
+  </compound>
+  <compound refid="md__home_tatiana_projects_zephyros_rp2040_example3_Project_documentacion_stylehtml_PCB" kind="page"><name>md__home_tatiana_projects_zephyros_rp2040_example3_Project_documentacion_stylehtml_PCB</name>
+  </compound>
+  <compound refid="md__home_tatiana_projects_zephyros_rp2040_example3_Project_documentacion_stylehtml_3D" kind="page"><name>md__home_tatiana_projects_zephyros_rp2040_example3_Project_documentacion_stylehtml_3D</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/tatiana/projects/zephyros-rp2040-example3/Project/src</name>
+  </compound>
+  <compound refid="dir_420bbf73a565d18112e0a22bc4daecad" kind="dir"><name>/home/tatiana/projects/zephyros-rp2040-example3/Project/documentacion/stylehtml</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>
